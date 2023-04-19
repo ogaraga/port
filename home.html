@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>My Portfolio</title>
+</head>
+<body id="mybody">
+    <!------------ All bodycontianer --------------->
+
+            <!-- preloader page -->
+    <section class="preloader-container">
+        <div class="preloader" id="loader">
+
+        </div>
+    </section>
+
+<section  id="bodding" style="display: none;">
+    <!-- Navigation Bar section -->
+    <nav>
+        <p class="ports">My Portfolio</p>
+        <label id="name">Search</label>
+        <input type="search" id="mytext">
+        <div class="tested">
+               <a href="home.html" class="hom">HOME</a>
+               <a href="about.html" class="hom">ABOUT ME</a>
+               <a href="edu.html" class="hom">EDUCATION</a>
+               <a href="work.html" class="hom">WORK-XPERIENCE</a>
+               <a href="cont.html" class="hom">CONTACT ME</a>
+               <a href="pubs.html" class="hom">MY PUBLICATIONS</a>
+        </div>
+        <p id="God">God is behind all sound learning world-wide:
+            <br> by Him and for Him, we shall tech the world!</p>
+    </nav>
+    <!-- picture section and vital info -->
+    <section class="imag-info">
+        <h3><em>Web-developer</em></h3>
+        <img src="my pic-1.jpg" alt="">
+        <p><span>Email</span>: raymond.ogaraga@gmail.com <br> <span>Tel</span>: 08069304370 <br> <span>Hobbies</span>: Football, Tennis and writing <br>
+            <h2>Author: <a href="../pubs.html">Click here!</a></h2>  
+        </p>
+    </section>
+    <!-- Social media contacts -->
+    <section class="social-media">
+        <p>You can reach out to me, view my social media contents by following: </p>
+        <div class="social-3">
+        <a href="https://web.facebook.com/Raymond Ogaraga/" class="linksocial"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://chat.whatsapp.com/CQMd2K0vJBF8IHndx4g4QZ/" class="linksocial"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://twitter.com/" class="linksocial"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" class="linksocial"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer section @ COPYRIGHTS -->
+    <footer>
+        <p>The <em><b>Publications & Projects</b></em> are subject to intl copyrights' laws and legislations &copy;2023. Trespassers are warned!</p>
+    </footer>
+</section>
+    <script src="index.js"></script>
+    <script>
+        let x;
+        document.getElementById("name").onclick = function(){
+           x = document.getElementById("mytext").value;
+        
+        }
+        document.getElementById("name").innerHTML = "Enter Search";
+        alert("God is behind all sound learning world-wide: by Him and for Him, we shall tech the world! You're Welcome to my Portfolio!")
+       
+    //    preloader section
+       document.querySelector('#bodding').style.display = "none";
+       document.getElementById('loader').classList.add('preloader');
+       document.getElementById("mybody").style.background = "transparent";
+
+       setTimeout(() => {
+        document.getElementById('loader').classList.remove('preloader');
+        document.querySelector('#bodding').style.display = "block";
+        document.getElementById("mybody").style.background = "black";
+        
+       }, 4500);
+       </script>
+</body>
+</html>

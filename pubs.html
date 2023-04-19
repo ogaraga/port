@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pubs.css">
+    <title>PUBLICATIONS</title>
+</head>
+<body>
+    <!-- Navigation Bar-Section -->
+     <nav class="simple-navbar">
+        <label id="name">Search</label>
+        <input type="text" id="mytext">
+     </nav>
+      <!-- welcome message Section -->
+      <section class="wel-come">
+        <h1 style="color:white;">You are welcome to my publications and projects page!!</h1>
+      </section>
+      <!-- my publications and projects -->
+     <section class="mainbody">
+        <div class="pub-proj">
+           
+                <ul>  
+                    <p id="publicats">These are my <u>Publications</u>-<i>Published</i> & <i>Unpublished</i>:</p> 
+                    <li><a href="surv.html" class="link-2">Surviving the odds of life <span>*</span>*</a></li>
+                    <li><a href="alg.html" class="link-2">The Algorithms of life<span>*</span>*</a></li>
+                    <li><a href="ana.html" class="link-2">The Anathomy of life <span>*</span>*</a></li>
+                    <li><a href="nev.html" class="link-2">Never Quit yet<span>*</span>*</a></li>
+                </ul>
+                <hr>
+            <ul>    
+                <p id="proj">My <u>projects</u>-<i>Accomplished</i> & <i>Ongoing</i>:</p>
+                <li><a href="calculator.html" class="link-2">Scientific Calculator<span>*</span>*</a></li></li>
+                <li>NGO Website <span>*</span>*</li>
+                <li>Payment Platform <span>*</span>*</li>
+                <li>Language translator <span>*</span>*</li>
+            </ul>
+        </div>
+    
+    </section>
+<!-- Footer section @ COPYRIGHTS -->
+    <footer>
+        <p>The <em><b>Publications & Projects</b></em> are subject to copyrights &copy;2023. Trespassers are warned!</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+        let x;
+        document.getElementById("name").onclick = function(){
+           x = document.getElementById("mytext").value;
+           const elem = document.getElementsByClassName("link-2");
+           let elemArray = document.getElementsByClassName("link-2");
+           for(let i = 0; i<elemArray.length; i++){
+           console.log(elemArray[i]);
+           console.log(x);
+           }
+            
+        }
+        document.getElementById("name").innerHTML = "Enter your search";
+    
+        
+       </script>
+</body>
+</html>

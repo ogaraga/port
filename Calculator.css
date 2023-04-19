@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 140, 255);
+  width: auto;
+  height: 100vh;
+}
+@media screen and (max-width: 540px) {
+  body {
+    width: auto;
+    height: auto;
+  }
+}
+body .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: auto;
+  height: 100vh;
+}
+@media screen and (max-width: 540px) {
+  body .main-container {
+    width: auto;
+    height: 100vh;
+    display: grid;
+  }
+}
+body .main-container .cal-container {
+  padding: 40px;
+}
+body .main-container .cal-container .cal-forms {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 265px;
+  height: auto;
+  background: gray;
+  box-shadow: 2px 2px 2px 2px pink, -2px 2px 2px 2px pink;
+}
+body .main-container .cal-container .cal-forms .cal-screen input {
+  background: black;
+  color: white;
+  text-align: right;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+  height: auto;
+  width: 265px;
+  border: none;
+  outline: none;
+}
+body .main-container .cal-container .cal-forms hr {
+  height: 20px;
+  background: rgba(0, 0, 0, 0.747);
+  padding-top: 40px;
+  border: none;
+  margin-top: -10px;
+  margin-bottom: -1px;
+}
+body .main-container .cal-container button {
+  padding: 27px;
+  font-size: 15px;
+  background: rgba(255, 0, 0, 0.308);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border-width: 3px;
+}
+body .main-container .cal-container button:hover {
+  cursor: pointer;
+  background: orchid;
+  color: black;
+}
+body .main-container .cal-container .zerobtn1 {
+  padding: 30px 62px;
+}
+body .main-container .cal-container .clearbtn1 {
+  padding: 30px 60px;
+  background: lightseagreen;
+}
+body .main-container .cal-container .equalbtn1 {
+  padding: 30px 60px;
+  background: orangered;
+}
+body .main-container .cal-container #mydot1 {
+  padding: 27.5px;
+}
+body .main-container .cal-container #myplus1 {
+  padding-right: 27px;
+  padding-right: 30px;
+}
+body .main-container .cal-container #myminus1 {
+  padding: 27px;
+  padding-right: 34px;
+  margin-right: -2px;
+}
+body .main-container .cal-container #mytimes1 {
+  padding: 27px;
+  padding-right: 30.5px;
+}
+body .main-container .cal-container #mydivide1 {
+  padding-right: 34px;
+}
+body .main-container .calculator-container {
+  border: 1px solid green;
+  width: 310px;
+  height: auto;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  margin-left: -0.5px;
+  border-top-left-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.753);
+  box-shadow: 2px 2px 2px 2px red, -2px -2px 2px 2px red;
+}
+@media screen and (max-width: 540px) {
+  body .main-container .calculator-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body .main-container .calculator-container .sub-containerbody {
+  width: 308px;
+  height: auto;
+  opacity: 0.9;
+  border-top-left-radius: 10px;
+  border: 1px solid rgba(128, 0, 0, 0.589);
+  margin-left: -2px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-screen {
+  width: 310px;
+  height: auto;
+  margin-left: -0.1px;
+  background-color: black;
+  padding: 25px;
+  border-top-left-radius: 10px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-screen #myscreen {
+  text-align: right;
+  padding: 10px;
+  width: 310px;
+  height: auto;
+  margin-left: -25px;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-top: 1px solid lightgrey;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons {
+  width: 310px;
+  height: auto;
+  margin-left: -1px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons input {
+  border-spacing: 3px;
+  border-radius: 10px;
+  border-style: ridge;
+  border-width: 4px;
+  background-color: mediumseagreen;
+  color: red;
+  font-weight: bold;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons input:hover {
+  background-color: orangered;
+  color: white;
+  font-weight: 700;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-one {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-one input {
+  padding: 18px 17.5px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-two {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-two input {
+  padding: 18px 18px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-three {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-three input {
+  padding: 18px 20px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-four {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-four input {
+  padding: 18px 18px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-five {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-five input {
+  padding: 18px 22.5px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-six {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-six input {
+  padding: 18px 22.5px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-seven {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-seven input {
+  padding: 18px 20.5px;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-eight {
+  display: flex;
+  justify-content: space-around;
+}
+body .main-container .calculator-container .sub-containerbody .calculator-buttons .input-eight input {
+  padding: 19px 70px;
+}/*# sourceMappingURL=Calculator.css.map */

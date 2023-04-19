@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+@media screen and (max-width: 540px) {
+  body {
+    margin: auto;
+    width: auto;
+  }
+}
+body .contact-me {
+  color: #fff;
+  margin: 100px;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me {
+    width: auto;
+    height: auto;
+    border: none;
+  }
+}
+body .contact-me p {
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: verdana;
+  font-weight: 900;
+}
+body .contact-me .form-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me .form-home {
+    display: grid;
+  }
+}
+@media screen and (max-width: 960px) {
+  body .contact-me .form-home {
+    display: grid;
+    border: none;
+  }
+}
+body .contact-me .form-home form {
+  margin: 100px;
+  font-size: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me .form-home form {
+    margin: auto;
+    width: auto;
+  }
+}
+body .contact-me .form-home form #mylabel1, body .contact-me .form-home form #mylabel2, body .contact-me .form-home form #mylabel5, body .contact-me .form-home form #mylabel6 {
+  text-transform: uppercase;
+}
+body .contact-me .form-home form input {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  outline: none;
+  border: none;
+  background-color: burlywood;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+body .contact-me .form-home form select {
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  padding-right: 35px;
+  font-size: 26px;
+  outline: none;
+  border: none;
+  background-color: burlywood;
+}
+body .contact-me .form-home form textarea {
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 20px;
+  width: auto;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: burlywood;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me .form-home form textarea {
+    width: 280px;
+    margin-top: 20px;
+  }
+}
+body .contact-me .form-home form button {
+  padding: 10px;
+  border-radius: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+  width: auto;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: aqua;
+  font-weight: 900;
+}
+body .contact-me .form-home form button:hover {
+  cursor: pointer;
+  background-color: gold;
+  color: red;
+}
+body .contact-me aside {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+body .contact-me aside p {
+  text-align: center;
+  color: white;
+}
+body .contact-me aside p a {
+  text-decoration: none;
+  color: aqua;
+  font-size: 17px;
+}
+body .contact-me aside p a:hover {
+  cursor: pointer;
+  color: gold;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me aside {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}/*# sourceMappingURL=cont.css.map */

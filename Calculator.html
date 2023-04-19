@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+     <section>
+        <h1 style="text-align: center;font-size:25px;color: white;margin-top: 30px;"><span style="background-color: brown; font-size: 25px;">||</span>My calculators <===> (RAYIO)<span style="background-color:green; font-size: 25px;">||</span></h1>
+        <h2  style="text-align: center;"><a style=" color: white; text-decoration: none;" href="home.html" class="hom">Back to home?</a></h2>
+    </section>
+    <!-- symple-calculator body -->
+<section class="main-container">
+    <div class="cal-container">
+        <div>
+            <form class="cal-forms">
+                <!-- calculator screen -->
+                <div class="cal-screen">
+                    <input type="text" name="screen" id="myscreen1" value="0">
+                </div>
+                <hr>
+                <!-- calculator keys -->
+                <div class="button-key" id="mybuttonkey">
+                    <button type="button" onclick="superbuttons('1')" id="mybtn1">1</button>
+                    <button type="button" onclick="superbuttons('2')" id="mybtn1">2</button>
+                    <button type="button" onclick="superbuttons('3')" id="mybtn1">3</button>
+                    <button type="button" onclick="superbuttons('+')" id="myplus1">+</button>
+                </div>
+                <div class="button-key">
+                    <button type="button" onclick="superbuttons('4')" id="mybtn1">4</button>
+                    <button type="button" onclick="superbuttons('5')" id="mybtn1">5</button>
+                    <button type="button" onclick="superbuttons('6')" id="mybtn1">6</button>
+                    <button type="button" onclick="superbuttons('-')" id="myminus1">-</button>
+                </div>
+                <div class="button-key">
+                    <button type="button" onclick="superbuttons('7')" id="mybtn1">7</button>
+                    <button type="button" onclick="superbuttons('8')" id="mybtn1">8</button>
+                    <button type="button" onclick="superbuttons('9')" id="mybtn1">9</button>
+                    <button type="button" onclick="superbuttons('*')" id="mytimes1">x</button>
+                </div>
+                <div class="button-key">
+                    <button type="button" onclick="superbuttons('0')" id="mybtn1" class="zerobtn1">0</button>
+                    <button type="button" onclick="superbuttons('.')" id="mydot1">.</button>
+                    <button type="button" onclick="superbuttons('/')" id="mydivide1">/</button>
+                </div>
+                <div class="button-key">
+                    <button type="button" onclick="mycleanser('')" id="myclear1" class="clearbtn1">C</button>
+                    <button type="button" onclick="myEqualTo('')" id="myequals1" class="equalbtn1">=</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<!----- scientific caclculator body ------>
+    <div class="calculator-container">
+        <div class="sub-containerbody">
+    <!-- Calculator Screen -->
+        <div class="calculator-screen">
+            <h1 style="color:white; font-size: 15px; text-align: center; margin-top:-27px;
+             padding: 5px; opacity: 0.4;">RAYIO CAL &lt;----&gt;(X+Y)<sup><sup>(2+X*Y)</sup></sup></h1>
+            <input type="text" name="Screen" id="myscreen" value="0">
+            <hr style="width: 310px; margin-left: -25px;outline: none; opacity: 0.1;">
+        </div>
+    <!-- Calculator keys-buttons -->
+        <div class="calculator-buttons">
+            <div class="input-one">
+                <input type="button" onclick="myRadian('rad')" id="myrad" data-value="rad" value="rad">
+                <input type="button" onclick="myPI('PI')" id="mypi" data-value="3.14159265359" value="π">
+                <input type="button" onclick="mySin('sin')" id="mysin" data-value="sin" value="sin">
+                <input type="button" onclick="myCos('cos')" id="mycos" data-value="cos" value="cos">
+                <input type="button" onclick="myTan('tan')" id="mytan" data-value="tan" value="tan">
+            </div>
+            <div class="input-two">
+                <input type="button" onclick="mydegrees('degs')" id="mydeg" data-value="deg" value="deg">
+                <input type="button" onclick="myIns('In')" id="myin" data-value="In" value="In">
+                <input type="button" onclick="myInv('Inv')" id="myinv" data-value="inverse" value="Inv">
+                <input type="button" onclick="mylogarithms(mylog)" id="mylog" data-value="log" value="log">
+                <input type="button" onclick="myinputs('()')" id="mybrack" value="()">
+            </div>
+            <div class="input-three">
+                <input type="button" onclick="myeulerno('e')" id="myeuler" data-value="e" value="e">
+                <input type="button" onclick="mysquarut('sqroot')" id="mysquarut" data-value="squareroot" value="√">
+                <input type="button" onclick="mycubrut('cubrut')" id="mycubrut" value="3√">
+                <input type="button" onclick="mysquare('squareof')" id="mysquare" data-value="x^2" value="x²">
+                <input type="button" onclick="myinputs('**')" id="myxpower" data-value="**" value="x^">
+            </div>
+            <div class="input-four">
+                <input type="button" onclick="myexponential('exp')" id="myexp" data-value="exp" value="exp">
+                <input type="button" onclick="mydelete('')" id="mydelete" data-value="Del" value="Del">
+                <input type="button" onclick="myclearAll('')" id="myclear" data-value="Ce" value="Ce">
+                <input type="button" onclick="mypercentage('percent')" id="mypercent" data-value="%" value="%">
+                <input type="button" onclick="myinputs('*')" id="mytimes" data-value="*" value="X"> 
+            </div>
+            <div class="input-five">
+                <input type="button" onclick="myinputs('9')" id="mynine" value="9">
+                <input type="button" onclick="myinputs('8')" id="myeight" value="8">
+                <input type="button" onclick="myinputs('7')" id="myseven" value="7">
+                <input type="button" onclick="myinputs('6')" id="mysix" value="6">
+                <input type="button" onclick="myinputs('/')" id="mydivide" data-value="divide" value="/">
+            
+            </div>
+            <div class="input-six">
+                <input type="button" onclick="myinputs('5')" id="myfive" value="5">
+                <input type="button" onclick="myinputs('4')" id="myfour" value="4">
+                <input type="button" onclick="myinputs('3')" id="mythree" value="3">
+                <input type="button" onclick="myinputs('2')" id="mytwo" value="2">
+                <input type="button" onclick="myinputs('+')" id="myplus" data-value="+" value="+">    
+            </div>
+            <div class="input-seven">
+                <input type="button" onclick="myinputs(',000')" id="my3zero" value="000">
+                <input type="button" onclick="myinputs('00')" id="my2zero" value="00">
+                <input type="button" onclick="myinputs('0')" id="myzero" value="0">
+                <input type="button" onclick="myinputs('1')" id="myone" value="1">
+                <input type="button" onclick="myinputs('-')" id="myminus" data-value="." value="-">
+            </div>
+            <div class="input-eight">
+                <input type="button" onclick="myinputs('.')" id="mydot" value=".">
+                <input type="button" onclick="myans('output')" id="myequals" value="=">
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+    
+<script>
+    function myinputs(nos) {
+        let myScreen = document.getElementById("myscreen");
+        myScreen.value += nos;
+        
+    }
+    function myans(output){
+        let myScreen = document.getElementById("myscreen");
+        output = eval(myScreen.value);
+        myScreen.value = output;
+        // if(output == Number && Symbol || Boolean || String) {
+        //     return Error;
+        // }
+        // else{
+        //     return output;
+        // }
+    }
+    function myclearAll(){
+        let myScreen = document.getElementById("myscreen");
+        myScreen.value = '';
+    }
+    function mydelete(){
+        let myScreen = document.getElementById("myscreen");
+        myScreen.value = myScreen.value.slice(0, -1);
+    }
+    function mypercentage(percent){
+        let myScreen = document.getElementById("myscreen");
+        percent = eval(myScreen.value/100);
+        myScreen.value = percent;
+    }
+    function myeulerno(e){
+    let myScreen = document.getElementById("myscreen");
+    e = 2.71828182845 ;
+    myScreen.value = e;
+    }
+    function myexponential(exp){
+        let myScreen =document.getElementById("myscreen");
+        let e = 2.71828182845;
+        exp = Math.pow(e, myScreen.value);
+        myScreen.value = exp;
+    }
+    function mysquarut(sqroot){
+        let myScreen = document.getElementById("myscreen");
+        sqroot = Math.sqrt(myScreen.value);
+        myScreen.value = sqroot;
+    }
+    function mycubrut(cubrut){
+        let myScreen = document.getElementById("myscreen");
+        cubrut = Math.pow((myScreen.value), 1/3);
+        myScreen.value = cubrut;
+    }
+    function mysquare(squareof){
+        let myScreen = document.getElementById("myscreen");
+        squareof = Math.pow(myScreen.value, 2);
+        myScreen.value = squareof;
+    }
+    function mylogarithms(mylog) {
+        let myScreen = document.getElementById("myscreen");
+        mylog = Math.log10(myScreen.value);
+        myScreen.value = mylog;
+    }
+    function myIns(In) {
+        let myScreen = document.getElementById("myscreen");
+        In = Math.log(myScreen.value);
+        myScreen.value = In;
+    }
+    function myIns(In) {
+        let myScreen = document.getElementById("myscreen");
+        In = Math.log(myScreen.value);
+        myScreen.value = In;
+    }
+    function myInv(Inv) {
+        let myScreen = document.getElementById("myscreen");
+        Inv = 1/(myScreen.value);
+        myScreen.value = Inv;
+    }
+    function mydegrees(degs) {
+        let myScreen = document.getElementById("myscreen");
+        degs = (myScreen.value * 360);
+        myScreen.value = degs;
+    }
+    function myPI(PI) {
+        let myScreen = document.getElementById("myscreen");
+        PI = 3.142857142857143;
+        myScreen.value = PI;
+    }
+
+    function mySin(sin) {
+        let myScreen = document.getElementById("myscreen");
+        const PI = 3.142;
+        sin = Math.sin(myScreen.value * PI/180);
+        myScreen.value = sin;
+    }
+
+    function myTan(tan) {
+        let myScreen = document.getElementById("myscreen");
+        const PI = 3.142;
+        tan = Math.tan(myScreen.value * PI/180);
+        myScreen.value = tan;
+    }
+
+    function myCos(cos) {
+        let myScreen = document.getElementById("myscreen");
+        const PI = 3.142;
+        cos = Math.cos(myScreen.value * PI/180);
+        myScreen.value = cos;
+    }
+    function myRadian(rad){
+        const PI = 3.142;
+        myScreen = document.getElementById('myscreen');
+        rad = eval(myScreen.value * PI/180);
+        myScreen.value = rad;
+    }
+
+
+        function superbuttons(num) {
+    let myButtons;
+    myButtons = document.getElementById("myscreen1");
+    myButtons.value += num;
+    }
+    function mycleanser() {
+        let cleaner;
+        cleaner = document.getElementById("myscreen1");
+        cleaner.value = "";
+    }
+    function myEqualTo(output) {
+        let myEquals;
+        myEquals = document.getElementById("myscreen1");
+        output = eval(myEquals.value);
+        myEquals.value = output;
+    }
+</script>
+</body>
+</html>

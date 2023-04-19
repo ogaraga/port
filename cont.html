@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cont.css">
+    <title>CONTACT ME</title>
+</head>
+<body>
+
+  <!--------- feedback message from portfolio owner  ---------->
+    <section id="mytextmgs" style=" margin: 100px; display: none; text-align: center;">
+        <i class="fa-regular fa-envelope" style="color: green;font-weight: bold; text-align: center; font-size: 35px;"></i>
+        <p style=" color: green; font-weight: bold; text-align: center; font-size: 26px;">Thank you for reaching out to me, I shall
+           be in touch as soon as I can.</p>
+        <aside>
+            <p style="color: white; font-size: 25px;">Do you need a quick ride home? 
+                <a style="text-decoration: none; color: aqua;" href="home.html" class="link">Yes!</a> ||
+                <a style="text-decoration: none; color: red;" href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" class="link">No!</a></p>
+            
+            </p>
+            
+        </aside>
+    </section>
+
+
+
+    <!-- contact me section -->
+    <section class="contact-me" id="contactme">
+        <p>Please, kindly fill in your details below</p>
+        <div class="form-home">
+        <form id="empty">
+            <label id="mylabel1">Full Name</label><br>
+            <input type="text" id="texbox1"  placeholder="Enter your names here" required><br> <br>
+            <label id="mylabel2">Gender</label><br>
+            <input type="radio" name="radio" id="radiobox1">
+            <label id="mylabel3">Male</label><br>
+            <input type="radio" name="radio" id="radiobox2">
+            <label id="mylabel4">Female</label><br><br>
+            <label id="mylabel5">Your age</label> <br>
+            <input type="number" name="number" id="myage" required> <br> <br>
+            <label id="mylabel6">location</label> <br> 
+            <select id="selectme" required>
+                <option selected disabled value= "location">Select your location</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="GHANA">GHANA</option>
+                <option value="GERMANY">GERMANY</option>
+                <option value="SOUTH-AMERICA">SOUTH-AMERICA</option>
+                <option value="EUROPE">EUROPE</option>
+                <option value="AFRICA">AFRICA</option>
+                <option value="ASIA">ASIA</option>
+            </select><br><br>
+            <textarea name="message" id="message" cols="40" rows="15" placeholder="Enter your message here" required></textarea> <br>
+            <button type="button" id="mybtns">Submit</button> <br>
+            <label id="mylabel7"></label> <br> 
+        </form>
+        <!-- a link to home page -->
+        <aside>
+            <p>Do you need a quick ride home?<a href="home.html" class="link">YES!</a></p>
+            
+        </aside>
+    </section>
+    <script>
+        
+        var fullName,
+            male,female, age, feedMe, myForm;
+            document.getElementById("mybtns").onclick = function(){
+            fullName = document.getElementById("texbox1").value;
+            male = document.getElementById("radiobox1");
+            female = document.getElementById("radiobox2");
+            age = document.getElementById("myage").value;
+            feedMe = document.getElementById("mytextmgs");
+            myForm = document.getElementById("contactme");
+            
+            
+        
+            if(fullName != "" && age != "" && age != String && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
+            feedMe.style.display = "block";
+            myForm.style.display = "none"
+            document.getElementById("mylabel7").innerHTML = "Form validated";
+            document.getElementById("mylabel7").style.color = "green";
+            return true;
+            
+        }
+            else if(fullName != "" && age != "" && age != String && female.checked && feedMe.style.display == "none" && myForm.style.display == "block"){
+            feedMe.style.display = "block";
+            myForm.style.display = "none"
+            document.getElementById("mylabel7").innerHTML = "Form validated";
+            document.getElementById("mylabel7").style.color = "green";
+                return true;
+        }
+            else{
+                feedMe.style.display = "none";
+                myForm.style.display = "block";
+                document.getElementById("mylabel7").innerHTML = " Fill in your details or Select your gender";
+                document.getElementById("mylabel7").style.color = "red";
+                return false;
+            }
+                
+        }     
+
+        
+    </script>
+    
+</body>
+</html>
