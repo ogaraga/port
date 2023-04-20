@@ -12,7 +12,6 @@ body {
   width: 100vw;
   height: 100vh;
   opacity: 0.99;
-  overflow-x: hidden;
 }
 @media screen and (max-width: 540px) {
   body {
@@ -34,6 +33,7 @@ body .simple-navbar {
   body .simple-navbar {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
   }
 }
 body .simple-navbar #name {
@@ -102,6 +102,7 @@ body .mainbody {
   body .mainbody {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
   }
 }
 body .mainbody .pub-proj {
@@ -119,6 +120,7 @@ body .mainbody .pub-proj {
     height: auto;
     display: grid;
     font-size: 15px;
+    overflow-x: hidden;
   }
 }
 body .mainbody .pub-proj hr {
@@ -226,6 +228,7 @@ body footer {
   color: #fff;
   margin-top: 100px;
   opacity: 0.99;
+  overflow: hidden;
 }
 body footer p {
   text-align: center;
@@ -238,6 +241,6 @@ body footer p {
     text-align: center;
     padding: 30px;
     margin-top: 200px;
-    height: 40vh;
+    height: auto;
   }
 }/*# sourceMappingURL=pubs.css.map */
