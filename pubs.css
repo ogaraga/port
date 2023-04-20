@@ -100,23 +100,22 @@ body .mainbody {
 }
 @media screen and (max-width: 540px) {
   body .mainbody {
-    width: 100%;
+    width: 100vw;
     height: auto;
-    overflow-x: hidden;
   }
 }
 body .mainbody .pub-proj {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
   font-size: 20px;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.8235294118);
+  overflow-x: hidden;
 }
 @media screen and (max-width: 540px) {
   body .mainbody .pub-proj {
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: grid;
     font-size: 15px;
@@ -144,7 +143,7 @@ body .mainbody .pub-proj #publicats {
 }
 @media screen and (max-width: 540px) {
   body .mainbody .pub-proj #publicats {
-    width: 100%;
+    width: auto;
     height: auto;
     text-align: center;
   }
@@ -239,7 +238,6 @@ body footer p {
 @media screen and (max-width: 540px) {
   body footer {
     text-align: center;
-    padding: 30px;
     margin-top: 200px;
     height: auto;
   }
