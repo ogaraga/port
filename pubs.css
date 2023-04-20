@@ -32,7 +32,7 @@ body .simple-navbar {
 }
 @media screen and (max-width: 540px) {
   body .simple-navbar {
-    width: 100vw;
+    width: 100%;
     height: auto;
   }
 }
@@ -58,19 +58,17 @@ body .simple-navbar #name:hover {
   }
 }
 body .simple-navbar #mytext {
-  padding: 5px 10px;
   border-radius: 10px;
   border: none;
   width: auto;
   outline: none;
-  text-align: justify;
+  text-align: start;
   font-size: 20px;
 }
 @media screen and (max-width: 540px) {
   body .simple-navbar #mytext {
     display: flex;
-    padding: 4px -10px;
-    width: auto;
+    width: 100px;
   }
 }
 body .wel-come {
@@ -79,7 +77,7 @@ body .wel-come {
 }
 @media screen and (max-width: 540px) {
   body .wel-come {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 }
@@ -92,7 +90,7 @@ body .wel-come h1 {
 }
 @media screen and (max-width: 540px) {
   body .wel-come h1 {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 }
@@ -102,7 +100,7 @@ body .mainbody {
 }
 @media screen and (max-width: 540px) {
   body .mainbody {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 }
@@ -112,11 +110,12 @@ body .mainbody .pub-proj {
   justify-content: space-between;
   padding: 10px;
   font-size: 20px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.8235294118);
 }
 @media screen and (max-width: 540px) {
   body .mainbody .pub-proj {
-    width: auto;
+    width: 100%;
     height: auto;
     display: grid;
     font-size: 15px;
@@ -143,7 +142,7 @@ body .mainbody .pub-proj #publicats {
 }
 @media screen and (max-width: 540px) {
   body .mainbody .pub-proj #publicats {
-    width: auto;
+    width: 100%;
     height: auto;
     text-align: center;
   }
