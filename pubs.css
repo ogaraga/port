@@ -16,8 +16,9 @@ body {
 }
 @media screen and (max-width: 540px) {
   body {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
   }
 }
 body .simple-navbar {
@@ -31,7 +32,7 @@ body .simple-navbar {
 }
 @media screen and (max-width: 540px) {
   body .simple-navbar {
-    width: auto;
+    width: 100vw;
     height: auto;
   }
 }
@@ -42,8 +43,8 @@ body .simple-navbar #name {
   border-radius: 10px;
   text-align: center;
   background-color: black;
-  padding: 10px 10px;
-  margin-right: 10px;
+  padding: 4px -5px;
+  margin-right: 5px;
   color: white;
   cursor: pointer;
 }
@@ -57,15 +58,19 @@ body .simple-navbar #name:hover {
   }
 }
 body .simple-navbar #mytext {
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 10px;
   border: none;
+  width: auto;
+  outline: none;
   text-align: justify;
   font-size: 20px;
 }
 @media screen and (max-width: 540px) {
   body .simple-navbar #mytext {
     display: flex;
+    padding: 4px -10px;
+    width: auto;
   }
 }
 body .wel-come {

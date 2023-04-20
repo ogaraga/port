@@ -79,7 +79,7 @@ nav{
     }
     #name{
         position: absolute;
-        right: 220px;
+        right: 300px;
         // margin-top: 2px;
         width: auto;
         font-size: 25px;
@@ -99,9 +99,9 @@ nav{
 
     }
     #mytext{
-        right: 45px;
+        right: 80px;
         // margin-top: 2px;
-        padding: 10px;
+        padding: 7px 10PX;
         border-radius: 10px;
         border: none;
         text-align: justify;
@@ -255,7 +255,7 @@ nav{
         background-color: #000;
         color: white;
         box-shadow: 2px 2px 2px 2px brown;
-        margin-top: -407px;
+        margin-top: -420px;
         padding: 10px;
         padding-top: 32px;
         margin-right: 5%;
@@ -268,6 +268,7 @@ nav{
             padding: 15px;
             margin-left: 10%;
             margin-right: 10%;
+            margin-top: 20px;
         }
         span{
             color: red;

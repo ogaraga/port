@@ -99,6 +99,7 @@ body{
             @media screen and (max-width: 540px) {
                width: 280px;
                margin-top: 20px;
+               margin: auto 20px;
                 
             }
         }
@@ -113,6 +114,9 @@ body{
             margin-top: 10px;
             background-color: aqua;
             font-weight: 900;
+            @media screen {
+                margin: auto 20px;
+            }
             &:hover{
                 cursor: pointer;
                 background-color: gold;
