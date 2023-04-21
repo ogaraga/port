@@ -232,11 +232,13 @@ nav{
         .hom{
             display: block;
             text-decoration: none;
-            text-align: center;
+            text-align: start;
             color: white;
             padding: 20px;
             font-weight: 700;
             opacity: 0.9;
+            font-size: 25px;
+            margin-top: 10px;
 
             @media screen and (max-width: 540px) {
                 padding: 5px;
@@ -269,6 +271,7 @@ nav{
         margin-right: 5%;
         height: auto;
         width: auto;
+        z-index: -1;
         @media screen and (max-width: 540px){
             display: grid;
             position: absolute;
@@ -277,7 +280,7 @@ nav{
             margin-left: 10%;
             margin-right: 10%;
             margin-top: 20px;
-            z-index: -10;
+          
         }
         span{
             color: red;
@@ -325,9 +328,12 @@ nav{
             a{
             text-decoration: none;
             color: aqua;
+
+
             &:hover{
                 color: gold;
                 cursor: crosshair;
+
             }
         }
     }

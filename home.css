@@ -223,11 +223,13 @@ nav .tested::after {
 nav .tested .hom {
   display: block;
   text-decoration: none;
-  text-align: center;
+  text-align: start;
   color: white;
   padding: 20px;
   font-weight: 700;
   opacity: 0.9;
+  font-size: 25px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 540px) {
   nav .tested .hom {
@@ -257,6 +259,7 @@ nav .tested .hom:hover {
   margin-right: 5%;
   height: auto;
   width: auto;
+  z-index: -1;
 }
 @media screen and (max-width: 540px) {
   .imag-info {
@@ -267,7 +270,6 @@ nav .tested .hom:hover {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 20px;
-    z-index: -10;
   }
 }
 .imag-info span {
