@@ -62,7 +62,7 @@ body .contact-me .form-home form {
     width: auto;
   }
 }
-body .contact-me .form-home form #mylabel1, body .contact-me .form-home form #mylabel2, body .contact-me .form-home form #mylabel5, body .contact-me .form-home form #mylabel6 {
+body .contact-me .form-home form #mylabel1, body .contact-me .form-home form #mylabel2, body .contact-me .form-home form #mylabel5, body .contact-me .form-home form #mylabel6, body .contact-me .form-home form #mylabeltel, body .contact-me .form-home form #mylabel {
   text-transform: uppercase;
 }
 body .contact-me .form-home form input {

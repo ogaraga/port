@@ -72,6 +72,7 @@ nav{
         width: 100%;
         height: auto;
         padding: 5px;
+        box-shadow: none;
     
 
     
@@ -173,20 +174,24 @@ nav{
         margin-top: 65px;
         width: auto;
         height: auto;
+        display: block;
         // position: relative;
         @media screen and (max-width: 540px) {
             color: white;
+            position: absolute;
             width: auto;
             height: auto;
             font-size: 10px;
-            display: flex;
+            display: none;
+            align-items: center;
             text-align: justify;
             flex-direction: row;
             justify-content: space-between;
             justify-content: center;
             margin-right: 10px;
             margin-left: 10px;
-            margin-top: 20px;
+            margin-top: -20px;
+            padding: 10px;
         }
 
         &::before{
@@ -236,6 +241,9 @@ nav{
             @media screen and (max-width: 540px) {
                 padding: 5px;
                 font-size: 10px;
+                display: block;
+                justify-content: right;
+                align-items: center;
 
             }
         
@@ -269,6 +277,7 @@ nav{
             margin-left: 10%;
             margin-right: 10%;
             margin-top: 20px;
+            z-index: -10;
         }
         span{
             color: red;

@@ -1,3 +1,4 @@
+// Section for scientific calculator
 function myinputs(nos) {
     let myScreen = document.getElementById("myscreen");
     myScreen.value += nos;
@@ -105,9 +106,9 @@ function myRadian(rad){
     rad = eval(myScreen.value * PI/180);
     myScreen.value = rad;
 }
+// section for simple calculator
 
-
-    function superbuttons(num) {
+function superbuttons(num) {
 let myButtons;
 myButtons = document.getElementById("myscreen1");
 myButtons.value += num;

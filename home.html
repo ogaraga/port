@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="home.css">
     <title>My Portfolio</title>
 </head>
+<style>
+    .fa-bars{
+        font-size: 20px;
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width:540px) {
+        .fa-bars{
+        font-size: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        }
+        .fa-bars:hover{
+            cursor: pointer;
+        }
+    
+    }
+</style>
 <body id="mybody">
     <!------------ All bodycontianer --------------->
 
@@ -24,7 +49,7 @@
         <p class="ports">My Portfolio</p>
         <label id="name">Search</label>
         <input type="search" id="mytext">
-        <div class="tested">
+        <div class="tested" id="dropdown">
                <a href="home.html" class="hom">HOME</a>
                <a href="about.html" class="hom">ABOUT ME</a>
                <a href="edu.html" class="hom">EDUCATION</a>
@@ -32,6 +57,7 @@
                <a href="cont.html" class="hom">CONTACT ME</a>
                <a href="pubs.html" class="hom">MY PUBLICATIONS</a>
         </div>
+        <i id="barrs" class="fa-solid fa-bars" style="z-index: 2; color:white"></i>
         <p id="God">God is behind all sound learning world-wide:
             <br> by Him and for Him, we shall tech the world!</p>
     </nav>
@@ -59,15 +85,35 @@
         <p>The <em><b>Publications & Projects</b></em> are subject to intl copyrights' laws and legislations &copy;2023. Trespassers are warned!</p>
     </footer>
 </section>
-    <script src="index.js"></script>
-    <script>
+
+
+    
+   
+   <script>
+    let itemz;
+    document.getElementById('barrs').onclick = function(){
+   itemz = document.getElementById('dropdown');
+   itemz.style.display = 'none';
+   if (itemz.style.display === 'none') {
+    itemz.style.display = 'block';
+    document.getElementById('barrs').innerHTML = 'X'
+   }
+   else{
+    itemz.style.display = 'none';
+   }
+    
+
+    }
+
+
+
         let x;
         document.getElementById("name").onclick = function(){
            x = document.getElementById("mytext").value;
         
         }
         document.getElementById("name").innerHTML = "Search";
-        alert("God is behind all sound learning world-wide: by Him and for Him, we shall tech the world! You're Welcome to my Portfolio!")
+        // alert("God is behind all sound learning world-wide: by Him and for Him, we shall tech the world! You're Welcome to my Portfolio!")
        
     //    preloader section
        document.querySelector('#bodding').style.display = "none";
@@ -79,7 +125,7 @@
         document.querySelector('#bodding').style.display = "block";
         document.getElementById("mybody").style.background = "black";
         
-       }, 4500);
+       }, 2500);
        </script>
 </body>
 </html>

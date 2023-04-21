@@ -34,6 +34,10 @@
         <form id="empty">
             <label id="mylabel1">Full Name</label><br>
             <input type="text" id="texbox1"  placeholder="Enter your names here" required><br> <br>
+            <label id="mylabel">Email</label><br>
+            <input type="email" name="email" id="email" pattern="example@good.com" placeholder="example@good.com" required><br><br>
+            <label id="mylabeltel">Tel</label><br>
+            <input type="tel" name="phone" id="phone" pattern="080-6930-4370" placeholder="080-6930-4370" required><br><br>
             <label id="mylabel2">Gender</label><br>
             <input type="radio" name="radio" id="radiobox1">
             <label id="mylabel3">Male</label><br>
@@ -67,9 +71,11 @@
     <script>
         
         var fullName,
-            male,female, age, feedMe, myForm;
+            male,female, age, feedMe, myForm, email, telephone;
             document.getElementById("mybtns").onclick = function(){
             fullName = document.getElementById("texbox1").value;
+            email = document.getElementById("email").value;
+            telephone = document.getElementById("phone").value;
             male = document.getElementById("radiobox1");
             female = document.getElementById("radiobox2");
             age = document.getElementById("myage").value;
@@ -78,7 +84,7 @@
             
             
         
-            if(fullName != "" && age != "" && age != String && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
+            if(fullName != "" && email != "" && email != String && telephone != "" && telephone != String && age != "" && age != String && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
             feedMe.style.display = "block";
             myForm.style.display = "none"
             document.getElementById("mylabel7").innerHTML = "Form validated";
@@ -86,7 +92,7 @@
             return true;
             
         }
-            else if(fullName != "" && age != "" && age != String && female.checked && feedMe.style.display == "none" && myForm.style.display == "block"){
+            else if(fullName != "" && email != "" && email != String && telephone != "" && telephone != String && age != "" && age != String && female.checked && feedMe.style.display == "none" && myForm.style.display == "block"){
             feedMe.style.display = "block";
             myForm.style.display = "none"
             document.getElementById("mylabel7").innerHTML = "Form validated";
