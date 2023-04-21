@@ -9,9 +9,30 @@
     <title>My Portfolio</title>
 </head>
 <style>
+
+    #close{
+        font-size: 20px;
+        position: fixed;
+        display: none;
+        margin-top: -20px;
+        margin-bottom: 10px; 
+    }
+    @media screen and (max-width:540px) {
+        #close{
+        font-size: 20px;
+        position: fixed;
+        text-align: center;
+        margin-left: 50%;
+        z-index: 10;
+        }
+        #close:hover{
+            cursor: pointer;
+        }
+    
+    }
     .fa-bars{
         font-size: 20px;
-        position: relative;
+        position: fixed;
         display: none;
         align-items: center;
         justify-content: center;
@@ -21,11 +42,12 @@
     @media screen and (max-width:540px) {
         .fa-bars{
         font-size: 20px;
-        position: relative;
+        position: fixed;
+        margin-left: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 1000;
+        z-index: 10;
         }
         .fa-bars:hover{
             cursor: pointer;
@@ -57,7 +79,8 @@
                <a href="cont.html" class="hom">CONTACT ME</a>
                <a href="pubs.html" class="hom">MY PUBLICATIONS</a>
         </div>
-        <i id="barrs" class="fa-solid fa-bars" style="z-index: 2; color:white"></i>
+        <i id ="open" class="fa-solid fa-bars" style="z-index: 2; color:white"></i>
+        <p id ="close" style="z-index: 2; color:white">X</p>
         <p id="God">God is behind all sound learning world-wide:
             <br> by Him and for Him, we shall tech the world!</p>
     </nav>
@@ -90,16 +113,38 @@
     
    
    <script>
-    let itemz;
-    document.getElementById('barrs').onclick = function(){
-   itemz = document.getElementById('dropdown');
-   if (itemz.style.display === 'none') {
-    itemz.style.display = 'block';
-    document.getElementById('barrs').innerHTML = 'X'
+    let menu;
+    document.getElementById('open').onclick = function(){
+    menu = document.getElementById('dropdown');
+    if (menu.style.display === 'none') {
+    menu.style.display = 'block';
+    document.getElementById('close').style.display = 'block';
+    document.getElementById('open').style.display = 'none';
+    
    }
    else{
-    itemz.style.display = 'none';
-    document.getElementById('barrs').innerHTML = ''
+    menu.style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+    document.getElementById('close').style.display = 'none';
+
+   }
+    
+
+    }
+
+    document.getElementById('close').onclick = function(){
+    menu = document.getElementById('dropdown');
+    if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    document.getElementById('close').style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+    
+   }
+   else{
+    menu.style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+    document.getElementById('close').style.display = 'none';
+
    }
     
 
