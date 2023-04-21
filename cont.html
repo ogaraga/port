@@ -84,7 +84,7 @@
             
             
         
-            if(fullName != "" && email != "" && email != String && telephone != "" && telephone != String && age != "" && age != String && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
+            if(fullName != "" && fullName !=Number && email != "" && email !=String && email != Number && telephone != "" && telephone != Number && telephone != String && age != "" && age != String && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
             feedMe.style.display = "block";
             myForm.style.display = "none"
             document.getElementById("mylabel7").innerHTML = "Form validated";
@@ -92,7 +92,7 @@
             return true;
             
         }
-            else if(fullName != "" && email != "" && email != String && telephone != "" && telephone != String && age != "" && age != String && female.checked && feedMe.style.display == "none" && myForm.style.display == "block"){
+            else if(fullName != "" && fullName !=Number && email != "" && email !=String && email != Number && telephone != "" && telephone != Number && telephone != String && age != "" && age != String && female.checked && feedMe.style.display == "none" && myForm.style.display == "block"){
             feedMe.style.display = "block";
             myForm.style.display = "none"
             document.getElementById("mylabel7").innerHTML = "Form validated";
