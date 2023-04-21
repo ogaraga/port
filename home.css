@@ -66,7 +66,6 @@ nav {
   width: 250px;
   height: 490px;
   padding-top: 10px;
-  box-shadow: 2px 2px 2px 2px brown;
 }
 @media screen and (max-width: 540px) {
   nav {
@@ -149,7 +148,7 @@ nav #God {
     width: 0px;
   }
   to {
-    width: 93%;
+    width: 78%;
   }
 }
 @keyframes blinktext {
@@ -167,8 +166,22 @@ nav #God {
     display: none;
   }
 }
+nav::after {
+  content: "";
+  width: 250px;
+  height: 1px;
+  background-color: white;
+  font-size: 10px;
+  position: absolute;
+  margin-left: -19px;
+}
+@media screen and (max-width: 540px) {
+  nav::after {
+    display: none;
+  }
+}
 nav .tested {
-  margin-top: 65px;
+  margin-top: 60px;
   width: auto;
   height: auto;
   display: block;
@@ -223,13 +236,13 @@ nav .tested::after {
 nav .tested .hom {
   display: block;
   text-decoration: none;
-  text-align: start;
+  text-align: center;
   color: white;
-  padding: 20px;
+  padding: 10px;
   font-weight: 700;
   opacity: 0.9;
-  font-size: 25px;
-  margin-top: 10px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 540px) {
   nav .tested .hom {
@@ -252,11 +265,12 @@ nav .tested .hom:hover {
   border-radius: 10px;
   background-color: #000;
   color: white;
-  box-shadow: 2px 2px 2px 2px brown, -2px -2px 2px 2px brown;
+  box-shadow: 2px 2px 2px 2px grey, -2px -2px 2px 2px grey;
   margin-top: -430px;
   padding: 10px;
   padding-top: 32px;
   margin-right: 5%;
+  opacity: 0.5;
   height: auto;
   width: auto;
   z-index: -1;
@@ -342,6 +356,9 @@ nav .tested .hom:hover {
     margin-top: 450px;
     text-align: center;
     padding-top: 10px;
+  }
+  .social-media p {
+    font-size: 15px;
   }
 }
 .social-media .social-3 {

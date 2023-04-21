@@ -65,7 +65,7 @@ nav{
     width: 250px;
     height: 490px;
     padding-top: 10px;
-    box-shadow: 2px 2px 2px 2px brown;
+    // box-shadow: 2px 2px 2px 2px grey, -2px -2px 2px 2px grey;
     @media screen and (max-width: 540px) {
         background-color: rgba(0, 0, 0, 1.5);
         color: white;
@@ -148,7 +148,7 @@ nav{
                 width: 0px;
             }
             to{
-                width: 93%;
+                width: 78%;
             
             }
         }
@@ -167,11 +167,25 @@ nav{
         @media screen and (max-width: 540px) {
             display: none;
         }
+       
+        }
+         
+        &::after{
+            content: "";
+                width: 250px;
+                height: 1px;
+                background-color: white;
+                font-size: 10px;
+                position: absolute;
+                margin-left: -19px;
+                @media screen and (max-width: 540px) {
+                    display: none;
+                }
     }
     
 
     .tested{
-        margin-top: 65px;
+        margin-top: 60px;
         width: auto;
         height: auto;
         display: block;
@@ -232,13 +246,13 @@ nav{
         .hom{
             display: block;
             text-decoration: none;
-            text-align: start;
+            text-align: center;
             color: white;
-            padding: 20px;
+            padding: 10px;
             font-weight: 700;
             opacity: 0.9;
-            font-size: 25px;
-            margin-top: 10px;
+            font-size: 15px;
+            margin-top: 15px;
 
             @media screen and (max-width: 540px) {
                 padding: 5px;
@@ -264,11 +278,12 @@ nav{
         border-radius: 10px;
         background-color: #000;
         color: white;
-        box-shadow: 2px 2px 2px 2px brown, -2px -2px 2px 2px brown;
+        box-shadow: 2px 2px 2px 2px grey, -2px -2px 2px 2px grey;
         margin-top: -430px;
         padding: 10px;
         padding-top: 32px;
         margin-right: 5%;
+        opacity: .5;
         height: auto;
         width: auto;
         z-index: -1;
@@ -354,6 +369,9 @@ nav{
         margin-top: 450px;
         text-align: center;
         padding-top: 10px;
+        p{
+            font-size: 15px;
+        }
 
     }
     .social-3{
