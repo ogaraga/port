@@ -93,13 +93,13 @@
     let itemz;
     document.getElementById('barrs').onclick = function(){
    itemz = document.getElementById('dropdown');
-   itemz.style.display = 'none';
    if (itemz.style.display === 'none') {
     itemz.style.display = 'block';
     document.getElementById('barrs').innerHTML = 'X'
    }
    else{
     itemz.style.display = 'none';
+    document.getElementById('barrs').innerHTML = ''
    }
     
 
