@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-image: url(work-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    width: 100vw;
+    height: 100vh;
+
+.work-duty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.856);
+    width: auto;
+    height: auto;
+    padding: 300px;
+    font-size: 20px;
+    color: white;
+    opacity: 1;
+    summary{
+        padding: 10px;
+        margin: 20px;
+        text-transform: uppercase;
+        
+    }
+    p{
+        color: crimson;
+        font-size: 20px;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+
+}
+}
