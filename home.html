@@ -86,6 +86,7 @@
     </nav>
     <!-- picture section and vital info -->
     <section class="imag-info">
+        <i id="exact-timedate"></i>
         <h3><em>Web-developer</em></h3>
         <img src="my pic-1.jpg" alt="">
         <p><span>Email</span>: raymond.ogaraga@gmail.com <br> <span>Tel</span>: 08069304370 <br> <span>Hobbies</span>: Football, Tennis and writing <br>
@@ -170,7 +171,16 @@
         document.querySelector('#bodding').style.display = "block";
         document.getElementById("mybody").style.background = "black";
         
-       }, 2500);
+       }, 2000);
+    //    Time of your local device detected
+       setInterval(() => {
+       let ray;
+       ray = document.getElementById('exact-timedate');
+       ray.innerHTML = new Date().toLocaleString();
+       ray.style.color = 'aqua';
+       ray.style.textAlign = 'center';
+        
+    }, 1000);
        </script>
 </body>
 </html>
