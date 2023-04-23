@@ -279,11 +279,10 @@ nav .tested .hom:hover {
   .imag-info {
     display: grid;
     position: absolute;
-    margin-top: 40px;
-    padding: 15px;
+    margin-top: -8px;
+    padding: 20px 15px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5px;
   }
 }
 .imag-info span {
@@ -353,7 +352,7 @@ nav .tested .hom:hover {
   .social-media {
     width: auto;
     height: auto;
-    margin-top: 450px;
+    margin-top: 460px;
     text-align: center;
     padding-top: 10px;
   }

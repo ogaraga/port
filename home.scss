@@ -290,11 +290,10 @@ nav{
         @media screen and (max-width: 540px){
             display: grid;
             position: absolute;
-            margin-top: 40px;
-            padding: 15px;
+            margin-top: -8px;
+            padding: 20px 15px;
             margin-left: 10%;
             margin-right: 10%;
-            margin-top: 5px;
           
         }
         span{
@@ -366,7 +365,7 @@ nav{
     @media screen and (max-width: 540px){
         width: auto;
         height: auto;
-        margin-top: 450px;
+        margin-top: 460px;
         text-align: center;
         padding-top: 10px;
         p{
