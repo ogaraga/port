@@ -25,12 +25,14 @@ function mypercentage(percent){
 }
 function myeulerno(e){
 let myScreen = document.getElementById("myscreen");
-e = 2.71828182845 ;
+let e;
+e = Math.E;
 myScreen.value = e;
 }
 function myexponential(exp){
     let myScreen =document.getElementById("myscreen");
-    let e = 2.71828182845;
+    let e;
+    e = Math.E;
     exp = Math.pow(e, myScreen.value);
     myScreen.value = exp;
 }
@@ -59,11 +61,6 @@ function myIns(In) {
     In = Math.log(myScreen.value);
     myScreen.value = In;
 }
-function myIns(In) {
-    let myScreen = document.getElementById("myscreen");
-    In = Math.log(myScreen.value);
-    myScreen.value = In;
-}
 function myInv(Inv) {
     let myScreen = document.getElementById("myscreen");
     Inv = 1/(myScreen.value);
@@ -76,34 +73,34 @@ function mydegrees(degs) {
 }
 function myPI(PI) {
     let myScreen = document.getElementById("myscreen");
-    PI = 3.142857142857143;
+    PI = Math.PI;
     myScreen.value = PI;
 }
 
 function mySin(sin) {
     let myScreen = document.getElementById("myscreen");
-    const PI = 3.142;
-    sin = Math.sin(myScreen.value * PI/180);
+    const PI = Math.PI;
+    sin = Math.sin(myScreen.value * Math.PI/180);
     myScreen.value = sin;
 }
 
 function myTan(tan) {
     let myScreen = document.getElementById("myscreen");
-    const PI = 3.142;
-    tan = Math.tan(myScreen.value * PI/180);
+    const PI = Math.PI;
+    tan = Math.tan(myScreen.value * Math.PI/180);
     myScreen.value = tan;
 }
 
 function myCos(cos) {
     let myScreen = document.getElementById("myscreen");
-    const PI = 3.142;
-    cos = Math.cos(myScreen.value * PI/180);
+    const PI = Math.PI
+    cos = Math.cos(myScreen.value * Math.PI/180);
     myScreen.value = cos;
 }
 function myRadian(rad){
-    const PI = 3.142;
+    const PI = Math.PI
     myScreen = document.getElementById('myscreen');
-    rad = eval(myScreen.value * PI/180);
+    rad = eval(myScreen.value * Math .PI/180);
     myScreen.value = rad;
 }
 // section for simple calculator
