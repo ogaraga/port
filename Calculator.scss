@@ -2,252 +2,134 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
   }
   
   body{
     background: rgb(0, 140, 255);
-    width: auto;
+    width: 100%;
     height: 100vh;
+    margin: auto;
     @media screen and (max-width: 540px) {
-      width: auto;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+    }
+  }
+  .container-calculators{
+    width: 70%;
+    height: 80%;
+    margin:  20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, black, gray, black);
+    @media screen and (max-width: 540px) {
+      width: 70%;
+      height: 80%;
+      margin: 80px auto;
+      background: linear-gradient(to right, lightgreen, gray, lightblue);
     }
     
-.main-container{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 50px;
-width: auto;
-height: 100vh;
-@media screen and (max-width: 540px) {
-  width: auto;
-  height: 100vh;
-  display: grid;
-}
-
-.cal-container{
-  padding: 40px;
-
-.cal-forms{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 265px;
-    height: auto;
-    background: gray;
-    box-shadow: 2px 2px 2px 2px pink, -2px 2px 2px 2px pink;
-}
-.cal-forms .cal-screen input{
-    background: black;
-    color: white;
-    text-align: right;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 16px;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.9;
-    height: auto;
-    width: 265px;
-    border: none;
-    outline: none;
-}
-
-.cal-forms hr{
-    height: 20px;
-    background: rgba(0, 0, 0, 0.747);
-    padding-top: 40px;
-    border: none;
-    margin-top: -10px;
-    margin-bottom: -1px;
-}
-button{
-    padding: 27px;
-    font-size: 15px;
-    background: rgba(255, 0, 0, 0.308);
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    border-width: 3px;
-
-    &:hover{
-    cursor: pointer;
-    background: orchid;
-    color: black;
   }
-}
-.zerobtn1{
-    padding: 30px 62px;
-}
-.clearbtn1{
-    padding: 30px 60px;
-    background: lightseagreen;
-}
-.equalbtn1{
-    padding: 30px 60px;
-    background: orangered;
+  .firstsection{
+    margin: auto 50px;
+    padding: 10%;
+    font-size: 30px;
+    width: 100%;
+    outline-offset: 15px;
+    height: auto;
+    details{
+      font-weight: bold;
+      width: 100%;
+      height: auto;
+      summary{
+        color: gold;
+        font-size: 29px;
+        outline: none;
+        border: none;
+        width: 100%;
+        height: auto;
+        &:hover{
+          color: rgba(255, 0, 0, 0.814);
+          cursor: pointer;
+        }
+      }
+      p{
+        color: burlywood;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .calc-science{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        transition: all .5s;
+        &:hover{
+          color: darkgreen;
+          cursor: pointer;
+        }
+      }
 
-}
-#mydot1{
-    padding: 27.5px;
+    }
+    @media screen and (max-width: 540px) {
+      margin: 5px 50px;
+      padding: 10%;
+      font-size: 30px;
+      width: 100%;
+      outline-offset: 15px;
+      height: auto;
+    }
+
+  }
+
+  .secondsection{
+    margin: auto 50px;
+    padding: 10%;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    details{
+      font-weight: bold;
+      summary{
+        color: rgba(255, 0, 0, 0.814);
+        font-size: 29px;
+        outline: none;
+        border: none;
+        &:hover{
+          cursor: pointer;
+          color: gold;
+        }
+      }
+      p{
+        color: rgb(222, 219, 135);
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .calc-simple{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        transition: all .5s;
+        &:hover{
+          color: darkgreen;
+          cursor: pointer;
+        }
+      }
+
+    }
+     @media screen and (max-width: 540px) {
+      margin: auto 50px;
+      padding: 10%;
+      font-size: 30px;
+      width: 100%;
+      outline-offset: 15px;
+      height: auto;
+      
+    }
+
+  }
   
-}
-#myplus1{
-    padding-right: 27px;
-    padding-right: 30px;
-}
-#myminus1{
-    padding: 27px;
-    padding-right: 34px;
-    margin-right: -2px;
-
-}
-
-#mytimes1{
-    padding: 27px;
-    padding-right: 30.5px;
-}
-
-#mydivide1{
-    padding-right: 34px;
-    
-}
-
-}
-
-.calculator-container {
-  border: 1px solid green;
-  width: 310px;
-  height: auto;
-  margin-bottom: 10px;
-  opacity: 0.9;
-  margin-left: -0.5px;
-  border-top-left-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.753);
-  box-shadow: 2px 2px 2px 2px red, -2px -2px 2px 2px red;
-@media screen and (max-width: 540px) {
-  margin-left: auto;
-  margin-right: auto;
-
-}
-.sub-containerbody {
-  width: 308px;
-  height: auto;
-  opacity: 0.9;
-  border-top-left-radius: 10px;
-  border: 1px solid rgba(128, 0, 0, 0.589);
-  margin-left: -2px;
-
-.calculator-screen {
-  width: 310px;
-  height: auto;
-  margin-left: -0.1px;
-  background-color: black;
-  padding: 25px;
-  border-top-left-radius: 10px;
-
-  #myscreen {
-  text-align: right;
-  padding: 10px;
-  width: 310px;
-  height: auto;
-  margin-left: -25px;
-  background-color: rgba(0, 0, 0, 0.753);
-  color: white;
-  outline: none;
-  border: none;
-  font-size: 20px;
-  border-top: 1px solid lightgrey;
-}
-
-}
-.calculator-buttons {
-  width: 310px;
-  height: auto;
-  margin-left: -1px;
-  input {
-  border-spacing: 3px;
-  border-radius: 10px;
-  border-style: ridge;
-  border-width: 4px;
-  background-color: mediumseagreen;
-  color: red;
-  font-weight: bold;
-
-  &:hover {
-  background-color: orangered;
-  color: white;
-  font-weight: 700;
-}
-
-}
-
-  .input-one {
-  display: flex;
-  justify-content: space-around;
-}
-.input-one input {
-  padding: 18px 17.5px;
-}
-.input-two {
-  display: flex;
-  justify-content: space-around;
-}
-.input-two input {
-  padding: 18px 18px;
-}
-.input-three {
-  display: flex;
-  justify-content: space-around;
-}
-.input-three input {
-  padding: 18px 20px;
-}
-.input-four {
-  display: flex;
-  justify-content: space-around;
-}
-.input-four input {
-  padding: 18px 18px;
-}
-.input-five {
-  display: flex;
-  justify-content: space-around;
-}
-.input-five input {
-  padding: 18px 22.5px;
-}
-.input-six {
-  display: flex;
-  justify-content: space-around;
-}
-.input-six input {
-  padding: 18px 22.5px;
-}
-.input-seven {
-  display: flex;
-  justify-content: space-around;
-}
-.input-seven input {
-  padding: 18px 20.5px;
-}
-.input-eight {
-  display: flex;
-  justify-content: space-around;
-}
-.input-eight input {
-  padding: 19px 70px;
-}
-
-}
-
-}
-
-
-}
-
-}
-
-  }
