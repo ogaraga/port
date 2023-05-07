@@ -17,8 +17,8 @@
            be in touch as soon as I can.</p>
         <aside>
             <p style="color: white; font-size: 25px;">Do you need a quick ride home? 
-                <a style="text-decoration: none; color: aqua;" href="home.html" class="link">Yes!</a> ||
-                <a style="text-decoration: none; color: red;" href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" class="link">No!</a></p>
+                <a style=" color: aqua;" href="home.html" class="link">Yes!</a> ||
+                <a style=" color: red;" href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" class="link">No!</a></p>
             
             </p>
             
@@ -84,7 +84,8 @@
             
             
         
-            if(fullName != ""  && email != "" && telephone != "" && age != "" && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
+            if(fullName != ""  && email != "" && telephone != "" && age != "" 
+            && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
             feedMe.style.display = "block";
             myForm.style.display = "none";
             document.getElementById("mylabel7").innerHTML = "Form validated";
@@ -92,7 +93,8 @@
             return true;
             
         }
-            else if(fullName != "" && email != ""&& telephone != "" && age != "" && female.checked && feedMe.style.display == "none" && myForm.style.display == "block" ){
+            else if(fullName != "" && email != ""&& telephone != "" && age != "" 
+            && female.checked && feedMe.style.display == "none" && myForm.style.display == "block" ){
             feedMe.style.display = "block";
             myForm.style.display = "none";
             document.getElementById("mylabel7").innerHTML = "Form validated";

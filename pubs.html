@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pubs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PUBLICATIONS</title>
 </head>
 <body>
     <!-- Navigation Bar-Section -->
      <nav class="simple-navbar">
-        <label id="name">Search</label>
-        <input type="text" id="mytext">
+        <span class="fa-solid fa-magnifying-glass" id="glass"></span>
+        <span class="fa-solid fa-xmark" id="close"></span>
+        <input type="search" id="mytext">
      </nav>
       <!-- welcome message Section -->
       <section class="wel-come">
-        <h1 style="color:white;">You are welcome to my publications and projects page!!</h1>
+        <h1>You are welcome to my publications and projects page!!</h1>
       </section>
       <!-- my publications and projects -->
      <section class="mainbody">
@@ -46,18 +48,35 @@
 
     
     <script>
-        let x;
-        document.getElementById("name").onclick = function(){
-           x = document.getElementById("mytext").value;
-           const elem = document.getElementsByClassName("link-2");
-           let elemArray = document.getElementsByClassName("link-2");
-           for(let i = 0; i<elemArray.length; i++){
-           console.log(elemArray[i]);
-           console.log(x);
-           }
-            
+        const myGlass = document.getElementById('glass');
+        const myClose = document.getElementById('close');
+        const myInput = document.getElementById('mytext');
+        myGlass.onclick = () => {
+            if (myInput.style.display == "none" && myClose.style.display == "none") {
+                myInput.style.display = "block";
+                myClose.style.display = "block";
+                myGlass.style.display = "none";
+            }
+            else{
+                myGlass.style.display = "block";
+                myInput.style.display = "none";
+                myClose.style.display = "none";
+                
+            }
         }
-        document.getElementById("name").innerHTML = "Search";
+        myClose.onclick = () => {
+            if (myInput.style.display == "block" && myGlass.style.display == "none") {
+                myInput.style.display = "none";
+                myClose.style.display = "none";
+                myGlass.style.display = "block";
+            }
+            else{
+                myGlass.style.display = "none";
+                myInput.style.display = "block";
+                myClose.style.display = "block";
+                
+            }
+        }
     
         
        </script>

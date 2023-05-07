@@ -71,7 +71,8 @@
     <!-- Navigation Bar section -->
     <nav>
         <p class="ports">My Portfolio</p>
-        <label id="name">Search</label>
+        <span class="fa-solid fa-magnifying-glass" id="glass"></span>
+        <span class="fa-solid fa-xmark" id="klose"></span>
         <input type="search" id="mytext">
         <div class="tested" id="dropdown">
                <a href="home.html" class="hom">HOME</a>
@@ -121,6 +122,11 @@
     menu = document.getElementById('dropdown');
     if (menu.style.display === 'none') {
     menu.style.display = 'block';
+    menu.style.backgroundColor = "gray";
+    menu.style.width = "130px";
+    menu.style.height = "270px";
+    menu.style.marginLeft = "0";
+    
     document.getElementById('close').style.display = 'block';
     document.getElementById('open').style.display = 'none';
     
@@ -150,18 +156,38 @@
 
    }
     
-
-    }
-
-
-
-        let x;
-        document.getElementById("name").onclick = function(){
-           x = document.getElementById("mytext").value;
-        
+ }
+        const myGlass = document.getElementById('glass');
+        const myClose = document.getElementById('klose');
+        const myInput = document.getElementById('mytext');
+        myGlass.onclick = () => {
+            if (myInput.style.display == "none" && myClose.style.display == "none") {
+                myInput.style.display = "block";
+                myClose.style.display = "block";
+                myGlass.style.display = "none";
+            }
+            else{
+                myGlass.style.display = "block";
+                myInput.style.display = "none";
+                myClose.style.display = "none";
+                
+            }
         }
-        document.getElementById("name").innerHTML = "Search";
-        // alert("God is behind all sound learning world-wide: by Him and for Him, we shall tech the world! You're Welcome to my Portfolio!")
+        myClose.onclick = () => {
+            if (myInput.style.display == "block" && myGlass.style.display == "none") {
+                myInput.style.display = "none";
+                myClose.style.display = "none";
+                myGlass.style.display = "block";
+            }
+            else{
+                myGlass.style.display = "none";
+                myInput.style.display = "block";
+                myClose.style.display = "block";
+                
+            }
+        }
+    
+    // alert("God is behind all sound learning world-wide: by Him and for Him, we shall tech the world! You're Welcome to my Portfolio!")
        
     //    preloader section
        document.querySelector('#bodding').style.display = "none";

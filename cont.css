@@ -137,7 +137,7 @@ body .contact-me aside p {
   color: white;
 }
 body .contact-me aside p a {
-  text-decoration: none;
+  text-decoration: underline;
   color: aqua;
   font-size: 17px;
 }
