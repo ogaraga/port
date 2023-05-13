@@ -15,6 +15,28 @@
         <span class="fa-solid fa-xmark" id="close"></span>
         <input type="search" id="mytext">
      </nav>
+<!-- section for searchbar and itemsinside -->
+     <div class="myseraches" id="mysearches" style="display: none;">
+        <a href="home.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">HOME</a>
+        <a href="about.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">ABOUT</a>
+        <a href="cont.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">CONTACT ME</a>
+        <a href="pubs.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">PROJECTS</a>
+        <a href="ngo.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">NGO WEBSITE</a>
+        <a href="surv.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">SURVIVING THE ODDS</a>
+        <a href="work.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">WORK EXPERIENCE</a>
+        <a href="alg.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">ALGORITHM OF LIFE</a>
+        <a href="nev.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">NEVER QUIT YET</a>
+        <a href="ana.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">ANATHOMY OF LIFE</a>
+        <a href="edu.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">EDUCATION</a>
+        <a href="Calculator.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">CALCULATORS</a>
+        <a href="http://www.google.com" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">GOOGLE</a>
+        <a href="http://www.w3schools.com" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">W3SCHOOLS</a>
+        <a href="https://fontawesome.com/icons" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">FONTSAWESOME ICONS</a>
+        <a href="https://nodejs.org/en" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">NODE.JS DOCUMENTATION</a>
+        <a href="https://icons.getbootstrap.com/" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">GETBOOTSTRAP</a>
+        <a href="https://github.com/dashboard" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">GITHUB COMMUNITY</a>
+        <a href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px;">LINKEDIN @ OGARAGA_RAYMOND</a>
+    </div>
       <!-- welcome message Section -->
       <section class="wel-come">
         <h1>You are welcome to my publications and projects page!!</h1>
@@ -48,6 +70,34 @@
 
     
     <script>
+        let myList = document.getElementById("mysearches");
+        let mybox = document.getElementById("mytext");
+        mybox.addEventListener("keyup", (e)=>{
+            if (myList.style.display === "none") {
+                myList.style.display = "inline-block";
+            }
+            else{
+                myList.style.display = "none";
+            }
+
+            var value = e.target.value;
+            let input, filter, elements;
+            input = document.getElementById("mytext");
+            filter = input.value.toLowerCase();
+            elements = document.getElementsByClassName("search");
+            let Myelements;
+            for(Myelements of elements){
+                let converted_elements = Myelements.textContent.toLowerCase();
+                    if(converted_elements.includes(filter)){
+                        Myelements.style.display = "block";
+                    }
+                    else{
+                        Myelements.style.display = "none";
+                    }
+                
+            }
+        })
+
         const myGlass = document.getElementById('glass');
         const myClose = document.getElementById('close');
         const myInput = document.getElementById('mytext');
