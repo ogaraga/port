@@ -77,7 +77,7 @@ body {
   font-weight: bold;
 }
 .firstsection details .calc-science {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
   font-size: 18px;
   transition: all 0.5s;
@@ -123,7 +123,7 @@ body {
   font-weight: bold;
 }
 .secondsection details .calc-simple {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
   font-size: 18px;
   transition: all 0.5s;

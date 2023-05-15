@@ -21,6 +21,33 @@ body .aboutme {
   margin: 20px;
   line-height: 1.7;
 }
+body .aboutme .fa-toggle-on, body .aboutme .fa-toggle-off {
+  position: fixed;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  top: 5px;
+  left: 200px;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 10;
+  cursor: pointer;
+}
+body .aboutme .fa-toggle-on:hover, body .aboutme .fa-toggle-off:hover {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 540px) {
+  body .aboutme .fa-toggle-on, body .aboutme .fa-toggle-off {
+    left: 40px;
+    top: 5px;
+    font-size: 20px;
+  }
+}
 body .aboutme h1 {
   text-align: center;
   font-weight: bold;
@@ -29,6 +56,7 @@ body .aboutme h1 {
 body .aboutme p {
   text-align: justify;
   font-size: 25px;
+  color: forestgreen;
 }
 body .aboutme p:hover {
   color: white;

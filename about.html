@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ABOUT ME</title>
 </head>
 <body>
     <div class="aboutme">
+        <span class="fa-solid fa-toggle-off" style="display: none;"></span>
+        <span class="fa-solid fa-toggle-on"></span>
         <h1 style="color: aqua;">ABOUT ME</h1>
         <p id="aboutme">
             Learning is dynamic. It is just like a seed that is being planted with a specific purpose with the assurance 
@@ -23,7 +26,7 @@
             and very jealous at what i do to earn a living. I don't compromise nor bend rules set out by my employer unless the 
             instance at which it creates/gives good financial shore-up for my company as that is the bedrock of its 
             existence/establishment while creating values for people. I am a Careful and accurate web-developer with mastery 
-            on tech-invoguing models like HTML, CSS, SASS, Js, JQuery, etc. I have built some web-based profiles and landing pages which
+            on tech-invoguing models like HTML, CSS, SASS, Javascripts, Nodejs, JQuery, etc. I have built some web-based profiles and landing pages which
              make the eyes glue at an instance of perusal. I have excellent knowledge in the operations of computing packages 
              like Ms Words, Ms Excel AND Powerpoint. Few financial institutions around my sphers of contact have had my presence. 
              Three of these are: The United Bank For Africa(UBA PLC), XpatFunds Financial Services Aba and Mainstreet Bank. I was 
@@ -55,5 +58,23 @@
          <a href="home.html" class="hom" style="color: white;">Back?</a> </p>
         
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+         $(()=>{
+            $('.fa-toggle-on').click(()=>{
+            $('body').css("background", "crimson");
+            $('.fa-toggle-off').show();
+            $('.fa-toggle-on').hide();
+            $('p').css("color", "black");
+        });
+             $('.fa-toggle-off').click(()=>{
+            $('body').css("background", "coral");
+            $('.fa-toggle-off').hide();
+            $('.fa-toggle-on').show();
+            $('p').css("color", "green");
+        });
+    });
+
+    </script>
 </body>
 </html>

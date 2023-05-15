@@ -68,9 +68,12 @@ body{
             outline: none;
             border: none;
             background-color: burlywood;
-            width: auto;
             font-size: 20px;
             font-weight: bold;
+            width: 100%;
+        }
+        #radiobox2, #radiobox1{
+            width: auto;
         }
         
         select{
@@ -79,9 +82,10 @@ body{
             padding: 10px;
             font-weight: bold;
             padding-right: 35px;
-            font-size: 26px;
+            font-size: 20px;
             outline: none;
             border: none;
+            width: 100%;
             background-color: burlywood;
         }
         textarea{

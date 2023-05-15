@@ -63,7 +63,7 @@ nav{
     background-color: rgba(0, 0, 0, 1.5);
     color: white;
     width: 250px;
-    height: 490px;
+    height: auto;
     padding-top: 10px;
     // box-shadow: 2px 2px 2px 2px grey, -2px -2px 2px 2px grey;
     @media screen and (max-width: 540px) {
@@ -76,12 +76,12 @@ nav{
     }
     .fa-toggle-on, .fa-toggle-off{
         position: fixed;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         background-color: black;
         padding: 10px;
         color: white ;
-        top: 20px;
+        top: 15px;
         left: 400px;
         border-radius: 50%;
         cursor: pointer;
@@ -109,7 +109,7 @@ nav{
         padding: 10px;
         margin-right: auto 5px;
         color: white;
-        right: 100px;
+        right: 37%;
         top: 15px;
         position: fixed;
         cursor: pointer;
@@ -145,14 +145,14 @@ nav{
         background-color: black;
         padding: 10px;
         color: white;
-        right: 100px;
         width: 40px;
-        right: 150px;
+        right: 37%;
         top: 15px;
         margin: auto;
         position: fixed;
         cursor: pointer;
         display: none;
+        z-index: 3;
         &:hover{
             background-color: #fff;
             color: #000;
@@ -177,8 +177,9 @@ nav{
         transition: all .3s;
         display: none;
         position: fixed;
-        right: 200px;
+        right: 40%;
         top: 15px;
+        z-index: 3;
         margin: auto;
         @media screen and (max-width: 540px) {
             width: 140px;
@@ -189,7 +190,7 @@ nav{
             margin: -10px 30px;
         }
             &:focus{
-                background-color: aqua;
+                background-color: salmon;
             }
     }
     .ports{

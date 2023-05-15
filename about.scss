@@ -18,6 +18,35 @@ body{
         margin: 20px;
         line-height: 1.7;
 
+        .fa-toggle-on, .fa-toggle-off{
+            position: fixed;
+            font-size: 20px;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            color: white;
+            top: 5px;
+            left: 200px;
+            border-radius: 50%;
+            opacity: 1;
+            z-index: 10;
+            cursor: pointer;
+            &:hover{
+                background-color: #fff;
+                color: #000;
+                font-size: 20px;
+                transition: all 0.3s;
+            
+            }
+            @media screen and (max-width:540px) {
+                left: 40px;
+                top: 5px;
+                font-size: 20px;
+            }
+            
+        }
+    
+
     h1{
         text-align: center;
         font-weight: bold;
@@ -28,6 +57,7 @@ body{
     p{
         text-align: justify;
         font-size: 25px;
+        color: forestgreen;
         &:hover{
             color: white;
             opacity: 0.6;

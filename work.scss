@@ -45,6 +45,35 @@ body{
     opacity: 1;
  
     }
+    .fa-toggle-on, .fa-toggle-off{
+        position: fixed;
+        font-size: 20px;
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+        color: white;
+        top: 10px;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 1;
+        z-index: 10;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+            font-size: 20px;
+            transition: all 0.3s;
+        
+        }
+        @media screen and (max-width:540px) {
+            left: 40%;
+            top: 10px;
+            font-size: 20px;
+        }
+        
+    }
+
+
     summary{
         padding: 10px;
         margin: 20px;
@@ -62,8 +91,44 @@ body{
         
     }
     a{
-        text-decoration: none;
+        text-decoration: underline;
     }
 
+    .details_1{
+        animation: deta_1 4s linear forwards alternate;
+        @keyframes deta_1 {
+            from{
+                position: relative;
+                top: 100%;
+                transform: rotate(1turn);
+                opacity: 0;
+                color: lawngreen;
+            }
+            to{
+                position: relative;
+                top: -150px;
+                opacity: 1;
+                
+            }
+        }
+    }
+    .details_2{
+        animation: deta_2 4s linear alternate-reverse;
+        @keyframes deta_2 {
+            from{
+                position: relative;
+                top: 50%;
+                opacity: 0;
+                color: rgba(252, 0, 197, 0.767);
+            }
+            to{
+                position: relative;
+                top: 0;
+                transform: rotate(1turn);
+                opacity: 1;
+                
+            }
+        }
+    }
 }
 }

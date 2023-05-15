@@ -72,9 +72,12 @@ body .contact-me .form-home form input {
   outline: none;
   border: none;
   background-color: burlywood;
-  width: auto;
   font-size: 20px;
   font-weight: bold;
+  width: 100%;
+}
+body .contact-me .form-home form #radiobox2, body .contact-me .form-home form #radiobox1 {
+  width: auto;
 }
 body .contact-me .form-home form select {
   text-align: justify;
@@ -82,9 +85,10 @@ body .contact-me .form-home form select {
   padding: 10px;
   font-weight: bold;
   padding-right: 35px;
-  font-size: 26px;
+  font-size: 20px;
   outline: none;
   border: none;
+  width: 100%;
   background-color: burlywood;
 }
 body .contact-me .form-home form textarea {
