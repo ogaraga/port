@@ -12,7 +12,7 @@ body{
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    opacity: 0.99;
+    opacity: 1;
     @media  screen and (max-width: 540px) {
         width: 100%;
         height: 100vh;
@@ -27,13 +27,39 @@ body{
     justify-content: center;
     display: flex;
     padding: 20px;
-    z-index: 10;
+    // z-index: 10;
     @media  screen and (max-width: 540px) {
         width: 100vw;
         height: 12vh;
     }
 
-
+    .fa-toggle-on, .fa-toggle-off{
+        position: fixed;
+        font-size: 25px;
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+        color: white;
+        top: 20px;
+        left: 400px;
+        border-radius: 50%;
+        opacity: 1;
+        z-index: 10;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+            font-size: 20px;
+            transition: all 0.3s;
+        
+        }
+        @media screen and (max-width:540px) {
+            left: 80px;
+            top: 20;
+            font-size: 20px;
+        }
+        
+    }
     #glass{
         font-size: 25px;
         font-weight: bold;
@@ -128,7 +154,7 @@ body{
 }
 
 .mainbody{
-    width: auto ;
+    width: 100% ;
     height: 100vh;
     @media  screen and (max-width: 540px) {
         width: auto;

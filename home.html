@@ -71,11 +71,13 @@
     <!-- Navigation Bar section -->
     <nav>
         <p class="ports">My Portfolio</p>
+        <span class="fa-solid fa-toggle-off"></span>
+        <span class="fa-solid fa-toggle-on"></span>
         <span class="fa-solid fa-magnifying-glass" id="glass"></span>
         <span class="fa-solid fa-xmark" id="klose"></span>
         <input type="search" id="mytext">
         <div>
-            <div class="tested" id="drop_up" style="display: none; list-style: none;;">
+            <div class="tested" id="drop_up" style="display: none; list-style: none;">
                 <a href="home.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">HOME</a>
                 <a href="about.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">ABOUT ME</a>
                 <a href="edu.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;" >EDUCATION</a>
@@ -138,8 +140,23 @@
 
 
     
-   
-   <script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+  <script>
+    $(()=>{
+        $('.fa-toggle-on').click(()=>{
+            $('body').css("backgroundColor", "gray");
+            $('.fa-toggle-off').show();
+            $('.fa-toggle-on').hide();
+            $('*').css("color", "aqua");
+        });
+        $('.fa-toggle-off').click(()=>{
+            $('body').css("backgroundColor", "#000");
+            $('.fa-toggle-off').hide();
+            $('.fa-toggle-on').show();
+            $('*').css("color", "magenta");
+        });
+    });
     const my_drop_down = document.getElementById("drop_up");
     const mySearch = document.getElementById("mytext");
     const myDropList = document.getElementsByClassName("humz");
@@ -150,7 +167,7 @@
             my_drop_down.style.display = "flex";
             my_drop_down.style.flexWrap = "wrap";
             my_drop_down.style.fontSize = "1rem";
-            my_drop_down .style.background = "gray";
+            my_drop_down .style.background = "burlywood";
            
         }
         else{

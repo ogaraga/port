@@ -11,6 +11,8 @@
 <body>
     <!-- Navigation Bar-Section -->
      <nav class="simple-navbar">
+        <span class="fa-solid fa-toggle-off"></span>
+        <span class="fa-solid fa-toggle-on"></span>
         <span class="fa-solid fa-magnifying-glass" id="glass"></span>
         <span class="fa-solid fa-xmark" id="close"></span>
         <input type="search" id="mytext">
@@ -42,7 +44,7 @@
         <h1>You are welcome to my publications and projects page!!</h1>
       </section>
       <!-- my publications and projects -->
-     <section class="mainbody">
+    <section class="mainbody">
         <div class="pub-proj">
            
                 <ul>  
@@ -68,8 +70,24 @@
         <p>The <em><b>Publications & Projects</b></em> are subject to Int'l copyrights &copy;2023. Trespassers are warned!</p>
     </footer>
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <script>
+     $(()=>{
+            $('.fa-toggle-on').click(()=>{
+            $('body').css("background", "gray");
+            $('.fa-toggle-off').show();
+            $('.fa-toggle-on').hide();
+            $('a').css("color", "red");
+        });
+             $('.fa-toggle-off').click(()=>{
+            $('body').css("background", "salmon");
+            $('.fa-toggle-off').hide();
+            $('.fa-toggle-on').show();
+            $('a').css("color", "lime");
+        });
+    });
+
         let myList = document.getElementById("mysearches");
         let mybox = document.getElementById("mytext");
         mybox.addEventListener("keyup", (e)=>{
