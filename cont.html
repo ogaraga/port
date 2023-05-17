@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
     <link rel="stylesheet" href="cont.css">
     <title>CONTACT ME</title>
 </head>
@@ -26,27 +29,30 @@
     </section>
 
 
-
     <!-- contact me section -->
     <section class="contact-me" id="contactme">
         <p>Please, kindly fill in your details below</p>
-        <div class="form-home">
-        <form id="empty">
-            <label id="mylabel1">Full Name</label><br>
-            <input type="text" id="texbox1"  placeholder="Enter your names here" required><br> <br>
-            <label id="mylabel">Email</label><br>
-            <input type="email" name="email" id="email" placeholder="example@good.com" required><br><br>
-            <label id="mylabeltel">Tel</label><br>
-            <input type="tel" name="phone" id="phone" pattern="080-6930-4370" placeholder="080-6930-4370" required><br><br>
-            <label id="mylabel2">Gender</label><br>
-            <input type="radio" name="radio" id="radiobox1">
-            <label id="mylabel3">Male</label><br>
-            <input type="radio" name="radio" id="radiobox2">
-            <label id="mylabel4">Female</label><br><br>
-            <label id="mylabel5">Your age</label> <br>
-            <input type="number" name="number" id="myage" required> <br> <br>
-            <label id="mylabel6">location</label> <br> 
-            <select id="selectme" required>
+        <div class="form-home mt-4">
+        <form id="empty" for = "/home.html" method="post" class="was-validated">
+            <div>
+                <label id="mylabel1" class="form-label">Full Name</label><br>
+                <input type="text" id="texbox1" class="form-control" placeholder="Enter your names here" required><br> <br>
+                <label id="mylabel" class="form-label">Email</label><br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="example@good.com" required><br><br>
+                <label id="mylabeltel" class="form-label">Tel</label><br>
+                <input type="tel" name="phone" id="phone" class="form-control" pattern="08069304370" placeholder="Enter your telephone" required><br><br>
+            </div>
+            <div>
+                <label id="mylabel2" class="form-check">Gender</label><br>
+                <input type="radio" name="radio" id="radiobox1" class="form-check-input">
+                <label id="mylabel3" class="form-check">Male</label>
+                <input type="radio" name="radio" id="radiobox2" class="form-check-input">
+                <label id="mylabel4" class="form-check">Female</label><br>
+            </div>
+            <label id="mylabel5" class="form-label">Your age</label> <br>
+            <input type="number" name="number" id="myage" class="form-control" required> <br> <br>
+            <label id="mylabel6" class="form-label">location</label> <br> 
+            <select id="selectme" class="form-control" required>
                 <option selected disabled value= "location">Select your location</option>
                 <option value="Nigeria">Nigeria</option>
                 <option value="USA">USA</option>
@@ -58,8 +64,10 @@
                 <option value="AFRICA">AFRICA</option>
                 <option value="ASIA">ASIA</option>
             </select><br><br>
-            <textarea name="message" id="message" cols="40" rows="15" placeholder="Enter your message here" required></textarea> <br>
+            <textarea name="message" id="message" class="form-control" minlength="15" maxlength="200" cols="40" rows="15" placeholder="Enter your message here" required></textarea> <br>
+            <button type="reset" id="myreset">Reset</button>
             <button type="button" id="mybtns">Submit</button> <br>
+            
             <label id="mylabel7"></label> <br> 
         </form>
         <!-- a link to home page -->
@@ -68,24 +76,29 @@
             
         </aside>
     </section>
+
+            <!-- Bootstrap CDN js bundle here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         
         var fullName,
             male,female, age, feedMe, myForm, email, telephone;
             document.getElementById("mybtns").onclick = function(){
-            fullName = document.getElementById("texbox1").value;
-            email = document.getElementById("email").value;
-            telephone = document.getElementById("phone").value;
+            fullName = document.getElementById("texbox1");
+            email = document.getElementById("email");
+            telephone = document.getElementById("phone");
             male = document.getElementById("radiobox1");
             female = document.getElementById("radiobox2");
-            age = document.getElementById("myage").value;
+            age = document.getElementById("myage");
             feedMe = document.getElementById("mytextmgs");
             myForm = document.getElementById("contactme");
+            const message = document.getElementById("message");
             
             
         
-            if(fullName != ""  && email != "" && telephone != "" && age != "" 
-            && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
+            if(fullName.value != ""  && email.value != "" && telephone.value != "" && age.value != "" &&
+            message.value != "" && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
             feedMe.style.display = "block";
             myForm.style.display = "none";
             document.getElementById("mylabel7").innerHTML = "Form validated";
@@ -93,8 +106,8 @@
             return true;
             
         }
-            else if(fullName != "" && email != ""&& telephone != "" && age != "" 
-            && female.checked && feedMe.style.display == "none" && myForm.style.display == "block" ){
+            else if(fullName.value != "" && email.value != ""&& telephone != "" && age != "" && message.value !=""
+            && female.checked && feedMe.style.display == "none" && myForm.style.display == "block"){
             feedMe.style.display = "block";
             myForm.style.display = "none";
             document.getElementById("mylabel7").innerHTML = "Form validated";
