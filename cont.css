@@ -65,6 +65,13 @@ body .contact-me .form-home form {
 body .contact-me .form-home form #mylabel1, body .contact-me .form-home form #mylabel2, body .contact-me .form-home form #mylabel5, body .contact-me .form-home form #mylabel6, body .contact-me .form-home form #mylabeltel, body .contact-me .form-home form #mylabel {
   text-transform: uppercase;
 }
+body .contact-me .form-home form #mylabel3, body .contact-me .form-home form #mylabel4 {
+  margin-top: -35px;
+}
+body .contact-me .form-home form #mylabel2 {
+  text-align: justify;
+  margin: -20px -30px;
+}
 body .contact-me .form-home form input {
   padding: 10px;
   border-radius: 10px;
@@ -78,6 +85,7 @@ body .contact-me .form-home form input {
 }
 body .contact-me .form-home form #radiobox2, body .contact-me .form-home form #radiobox1 {
   width: auto;
+  margin: auto;
 }
 body .contact-me .form-home form select {
   text-align: justify;
@@ -110,27 +118,48 @@ body .contact-me .form-home form textarea {
     margin: auto 20px;
   }
 }
-body .contact-me .form-home form button {
+body .contact-me .form-home form #mybtns {
   padding: 10px;
   border-radius: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
   width: auto;
+  float: right;
   font-size: 20px;
-  margin-top: 10px;
   background-color: aqua;
   font-weight: 900;
 }
 @media screen {
-  body .contact-me .form-home form button {
+  body .contact-me .form-home form #mybtns {
     margin: auto 20px;
   }
 }
-body .contact-me .form-home form button:hover {
+body .contact-me .form-home form #mybtns:hover {
   cursor: pointer;
   background-color: gold;
   color: red;
+}
+body .contact-me .form-home form #myreset {
+  padding: 10px;
+  border-radius: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-align: center;
+  width: auto;
+  font-size: 20px;
+  background-color: gray;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me .form-home form #myreset {
+    margin: auto 20px;
+  }
+}
+body .contact-me .form-home form #myreset:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: white;
 }
 body .contact-me aside {
   font-size: 18px;

@@ -80,7 +80,7 @@ nav {
 nav .fa-toggle-on, nav .fa-toggle-off {
   position: fixed;
   font-size: 20px;
-  text-align: center;
+  opacity: 1;
   background-color: black;
   padding: 10px;
   color: white;
@@ -97,7 +97,7 @@ nav .fa-toggle-on:hover, nav .fa-toggle-off:hover {
 }
 @media screen and (max-width: 540px) {
   nav .fa-toggle-on, nav .fa-toggle-off {
-    left: 150px;
+    left: 100px;
     top: 0;
     font-size: 20px;
   }
