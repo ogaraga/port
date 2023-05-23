@@ -168,3 +168,159 @@ body{
 
     }
 }
+
+.chatbot-container{
+    display: grid;
+    place-content: center;
+    width: 50vw;
+    height: 90vh;
+    background-color: aqua;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    z-index: 100;
+    display: none;
+    margin-top: 20px;
+
+    @media screen and (max-width: 540px) {
+            height: 90vh;
+            width: auto;
+            top: -20px;
+            position: absolute;
+            background-color: aqua;
+    }
+
+.chatbot-message{
+    background-color: white;
+    color: black;
+    width: 52.7%;
+    height: 60%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    overflow: visible;
+
+    @media screen and (max-width: 540px){
+            width: 90%;
+            height: auto;
+            top: 20px;
+            position: relative;
+        }
+    
+
+#p{
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+    margin: auto;
+}
+
+#chatbottext{
+margin-top: 30px;
+width: auto;
+height: auto;
+word-wrap: break-word;
+line-height: 1.5;
+font-size: 18px;
+}
+
+.input-block{
+   background-color: grey;
+   width: auto;
+   height: auto;
+   margin-top: 270px;
+
+@media screen and (max-width: 540px) {
+    background-color: grey;
+    width: auto;
+    height: auto;
+    display: grid;
+    place-content: center;
+    margin-top: 270px;
+}
+
+#textbox{
+    padding: 10px;
+    width: auto;
+    margin: 10px 15%;
+    text-align: start;
+    font-size: 18px;
+    background-color: coral;
+    color: rebeccapurple;
+    border: none;
+    outline: none;
+    @media screen and (max-width:540px) {
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+    }  
+}
+#end{
+    padding: 10px;
+    width: auto;
+    margin: auto 30%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    outline: none;
+
+  &:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: blue;
+    transition: all 0.3s;
+}
+@media screen and (max-width:540px) {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+}  
+}
+}
+
+}
+}
+
+#lets_chat{
+text-align: center;
+margin: auto;
+font-size:20px;
+font-variant: small-caps;
+color: blue;
+background-color: magenta;
+width: 130px;
+border-radius: 10px;
+padding: 10px;
+height: 58px;
+z-index: 100;
+overflow: visible;
+position: absolute;
+animation: Hover 3s ease-in-out forwards;
+
+&:hover{
+transition: padding 0.3s;
+color: white;
+background-color: goldenrod;
+cursor: pointer;
+border-radius: 50%;
+width: 90px;
+height: 90px;
+}
+
+
+@keyframes Hover {
+from{
+    transform: translateX(-100px);
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+to{
+    transform: translateY(470px);
+    position: absolute;
+    right: 20px;
+}
+}
+}
