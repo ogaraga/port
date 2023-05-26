@@ -129,6 +129,37 @@ body{
         place-content: center;
         margin-top: 270px;
     }
+    @media screen and (max-width: 540px) {
+        #enter{
+            padding: 13px;
+            position: absolute;
+            right: 40px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            outline: none;
+            bottom: 71px;
+    
+        }
+     
+    }
+    #enter{
+        padding: 13px;
+        position: absolute;
+        right: 40px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        outline: none;
+        bottom: 71px;
+        display: block;
+        &:hover{
+            background-color: aqua;
+            color: white;
+            transition: all 1s;
+        }
+
+    }
 
     #textbox{
         padding: 10px;
