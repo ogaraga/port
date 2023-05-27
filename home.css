@@ -135,7 +135,7 @@ body .preloader-container .preloader {
   .chatbot-container .chatbot-message .input-block #enter {
     padding: 13px;
     position: absolute;
-    right: 40px;
+    right: 35px;
     background-color: blueviolet;
     color: white;
     border: none;
@@ -148,7 +148,7 @@ body .preloader-container .preloader {
   width: auto;
   padding: 13px;
   position: absolute;
-  right: 40px;
+  right: 24px;
   background-color: blueviolet;
   color: white;
   border: none;
