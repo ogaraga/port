@@ -132,8 +132,10 @@
         <i id="exact-timedate"></i>
         <h3><em>Web-developer</em></h3>
         <img src="my pic-1.jpg" alt="">
-        <p><span>Email</span>: raymond.ogaraga@gmail.com <br> <span>Tel</span>: 08069304370 <br> <span>Hobbies</span>: Football, Tennis and writing <br>
-            <h2>Author: <a href="pubs.html">Click here! <b style="opacity: 0.5; font-size: 12px;">click disabled on mobile</b></a></h2>  
+        <p><span>Email</span>: raymond.ogaraga@gmail.com <br>
+        <span>Tel</span>: 08069304370 <br> 
+        <span>Hobbies</span>: Football, Tennis and writing <br>
+        <h2 style="text-indent: 7px;">Author: <a href="pubs.html">Click here! <b style="opacity: 0.5; font-size: 12px;">click disabled on mobile</b></a></h2>  
         </p>
     </section>
     <!-- Social media contacts -->
@@ -385,7 +387,8 @@ enterMe.addEventListener("click", ()=>{
          "Cost of learning programming?":"it depends on your desire and scope of what you want",
      }; 
 
-
+     
+// toggle modes for view interests.
 
     $(()=>{
         $('.fa-toggle-on').click(()=>{
@@ -512,7 +515,7 @@ enterMe.addEventListener("click", ()=>{
        setTimeout(() => {
         document.getElementById('loader').classList.remove('preloader');
         document.querySelector('#bodding').style.display = "block";
-        document.getElementById("mybody").style.background = "black";
+        document.getElementById("mybody").style.background = "tomato";
         
        }, 2000);
     //    Time of your local device detected
