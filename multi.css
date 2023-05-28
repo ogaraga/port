@@ -322,6 +322,12 @@
   position: absolute;
   bottom: 0;
 }
+#mysection .maindiv .first-work a:hover {
+  transition: all 1s;
+  color: aqua;
+  font-size: 19px;
+  font-variant: small-caps;
+}
 #mysection .maindiv .second-work {
   margin: auto;
   display: flex;
@@ -339,11 +345,47 @@
   }
 }
 #mysection .maindiv .second-work a {
-  color: midnightblue;
+  color: darkorange;
   font-size: 20px;
   margin: 20px auto;
   position: absolute;
   top: 30px;
+}
+#mysection .maindiv .second-work a:hover {
+  transition: all 1s;
+  color: white;
+  font-size: 19px;
+  font-variant: small-caps;
+}
+#mysection .maindiv .third-work {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 130px;
+}
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .third-work {
+    width: auto;
+    height: auto;
+    margin: auto;
+    bottom: 0;
+  }
+}
+#mysection .maindiv .third-work a {
+  color: magenta;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px auto;
+  position: absolute;
+  top: 40px;
+}
+#mysection .maindiv .third-work a:hover {
+  transition: all 1s;
+  color: black;
+  font-variant: small-caps;
+  font-size: 19px;
 }
 #mysection aside {
   text-align: center;
