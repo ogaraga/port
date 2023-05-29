@@ -17,7 +17,11 @@ body {
 }
 body .contact-me {
   color: #fff;
-  margin: 100px;
+  margin-top: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (max-width: 540px) {
   body .contact-me {
@@ -26,13 +30,32 @@ body .contact-me {
     border: none;
   }
 }
-body .contact-me p {
+body .contact-me .intro {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me .intro {
+    width: auto;
+    margin: auto;
+    position: relative;
+  }
+}
+body .contact-me .intro p {
+  color: white;
   text-align: center;
   margin-top: 100px;
   padding: 10px;
   font-size: 30px;
   font-family: verdana;
   font-weight: 900;
+}
+body .contact-me .intro a {
+  color: white;
+  font-size: 20px;
+  margin-top: 70px;
+  position: absolute;
+  right: 10%;
 }
 body .contact-me .form-home {
   display: flex;
@@ -165,28 +188,4 @@ body .contact-me .form-home form #myreset:hover {
   cursor: pointer;
   background-color: salmon;
   color: white;
-}
-body .contact-me aside {
-  font-size: 18px;
-  padding-bottom: 20px;
-}
-body .contact-me aside p {
-  text-align: center;
-  color: white;
-}
-body .contact-me aside p a {
-  text-decoration: underline;
-  color: aqua;
-  font-size: 17px;
-}
-body .contact-me aside p a:hover {
-  cursor: pointer;
-  color: gold;
-}
-@media screen and (max-width: 540px) {
-  body .contact-me aside {
-    width: auto;
-    height: auto;
-    margin: auto;
-  }
 }/*# sourceMappingURL=cont.css.map */
