@@ -432,11 +432,32 @@ nav{
             
             }
         }
-        
-        @media screen and (max-width: 540px) {
-            display: none;
-        }
        
+        @media screen and (max-width: 540px) {
+        display: block;
+        animation: nams 8s steps(86) forwards,
+        blinktext 8s steps(86) forwards;
+        @keyframes nams {
+            from{
+                width: 0px;
+            }
+            to{
+                width: 52%;
+            }
+        }
+        @keyframes blinktext {
+            from{
+                color: white;
+                border-right: 1px solid orange;
+            }
+            to{
+                color: aqua;
+                border-right: 0px solid orange;
+                width: 52%;
+            }
+        }
+        }
+    
         }
          
         &::after{
@@ -541,6 +562,56 @@ nav{
         }
     }
 }
+#ogaraga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    text-align: center;
+    animation: ogaraga 25s linear forwards 5s;
+    transition: animation 1s;
+    @keyframes ogaraga {
+        from{
+            transform: translateX(35%);
+            transform: scalex(1);
+            color: red;
+        }
+        to{
+            transform: scale(.8);
+            color: white;
+            left: 35%;
+            opacity: 1;
+            font-variant: small-caps;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        #raywise{
+            display: none;
+        }
+        left: 5%;
+      top: 17%;  
+      margin: auto;
+      @keyframes ogaraga {
+        from{
+            margin: auto;
+            transform: scale(1);
+            color: red;
+        }
+        to{
+            margin: auto;
+            transform: scale(.6);
+            color: white;
+            opacity: 1;
+            font-variant: small-caps;
+        }
+    }
+   
+    }
+
+}
     .imag-info{
         float: right;
         border: none;
@@ -566,7 +637,7 @@ nav{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 40px;
+            margin-top: 90px;
             padding: 10px;
             top: 80px;
             margin-left: 10%;
