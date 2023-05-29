@@ -592,15 +592,16 @@ nav .tested .hom:hover {
 .imag-info img {
   width: 250px;
   height: 200px;
-  border-radius: 90%;
-  margin-top: 20px;
-  margin-left: 10px;
+  border-radius: 50%;
+  margin-top: 20px auto;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 @media screen and (max-width: 540px) {
   .imag-info img {
     width: 250px;
     height: 200px;
-    margin: 10px;
+    margin: auto;
     padding: auto;
   }
 }
