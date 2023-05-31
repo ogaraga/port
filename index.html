@@ -4,91 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pubs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>PUBLICATIONS</title>
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
 </head>
-<body>
+<style>
+
+    #close{
+        font-size: 20px;
+        position: fixed;
+        display: none;
+        margin-top: -20px;
+        margin-bottom: 10px; 
+    }
+    @media screen and (max-width:540px) {
+        #close{
+        font-size: 20px;
+        position: fixed;
+        text-align: center;
+        margin-top: -35px;
+        margin-left: 50%;
+        z-index: 10;
+        }
+        #close:hover{
+            cursor: pointer;
+        }
     
-     <!-- CHATBOT SECTION -->
-   <h2 id="lets_chat">Click on me<i class="fa-brands fa-rocketchat"></i></h2>
-   <div class="chatbot-container" id="chatbox">
-       <div class="chatbot-message">
-           <p id="p">Hey! I'm your virtual assistant: <em style="color:green">I'm listening..</em></p>
-           <p id="chatbottext"></p>
-           <div class="input-block">
+    }
+    .fa-bars{
+        font-size: 20px;
+        position: fixed;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width:540px) {
+        .fa-bars{
+        font-size: 20px;
+        position: fixed;
+        margin-left: 50%;
+        display: flex;
+        margin-top: -35px;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        }
+        .fa-bars:hover{
+            cursor: pointer;
+        }
+    
+    }
+</style>
+<body id="mybody">
+    
+<!------------ All bodycontianer --------------->
+
+            <!-- preloader page -->
+    <section class="preloader-container">
+        <div class="preloader" id="loader"></div>
+    </section>
+
+<section  id="bodding" style="display: none;">
+  
+    <!-- CHATBOT SECTION -->
+    <h2 id="lets_chat">Click on me<i class="fa-brands fa-rocketchat"></i></h2>
+    <div class="chatbot-container" id="chatbox">
+        <div class="chatbot-message">
+            <p id="p">Hey! I'm your virtual assistant: <em style="color:green">I'm listening..</em></p>
+            <p id="chatbottext"></p>
+            <div class="input-block">
                 <input type="text" id="textbox" autocomplete="on" autofocus="true" placeholder="Enter your text...">
                 <button type="button" id="end">EndChat</button>
-                <button type="button" id="enter">Send</button>
-            </div >
-       </div>
-   </div>
-    <!-- Navigation Bar-Section -->
-     <nav class="simple-navbar">
+                <input type="button" id = enter value="Send">
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Bar section -->
+    <nav>
+        <p class="ports">My Portfolio</p>
         <span class="fa-solid fa-toggle-off" style="display: none;"></span>
         <span class="fa-solid fa-toggle-on"></span>
         <span class="fa-solid fa-magnifying-glass" id="glass"></span>
-        <span class="fa-solid fa-xmark" id="close"></span>
+        <span class="fa-solid fa-xmark" id="klose"></span>
         <input type="search" id="mytext">
-     </nav>
-<!-- section for searchbar and itemsinside -->
-     <div class="myseraches" id="mysearches" style="display: none;">
-        <a href="index.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">HOME</a>
-        <a href="about.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">ABOUT</a>
-        <a href="cont.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">CONTACT ME</a>
-        <a href="pubs.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">PROJECTS</a>
-        <a href="ngo.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">NGO WEBSITE</a>
-        <a href="surv.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">SURVIVING THE ODDS</a>
-        <a href="work.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">WORK EXPERIENCE</a>
-        <a href="alg.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">ALGORITHM OF LIFE</a>
-        <a href="nev.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">NEVER QUIT YET</a>
-        <a href="ana.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">ANATHOMY OF LIFE</a>
-        <a href="edu.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">EDUCATION</a>
-        <a href="Calculator.html" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">CALCULATORS</a>
-        <a href="http://www.google.com" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">GOOGLE</a>
-        <a href="http://www.w3schools.com" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">W3SCHOOLS</a>
-        <a href="https://fontawesome.com/icons" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">FONTSAWESOME ICONS</a>
-        <a href="https://nodejs.org/en" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">NODE.JS DOCUMENTATION</a>
-        <a href="https://icons.getbootstrap.com/" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">GETBOOTSTRAP</a>
-        <a href="https://github.com/dashboard" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">GITHUB COMMUNITY</a>
-        <a href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" target="_blank" class="search" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">LINKEDIN @ OGARAGA_RAYMOND</a>
-    </div>
-      <!-- welcome message Section -->
-      <section class="wel-come">
-        <h1>You are welcome to my publications and projects page!!</h1>
-      </section>
-      <!-- my publications and projects -->
-    <section class="mainbody">
-        <div class="pub-proj">
-           
-                <ul>  
-                    <p id="publicats">These are my <u>Publications</u>-<i>Published</i> & <i>Unpublished</i>:</p> 
-                    <li><a href="surv.html" class="link-2">Surviving the odds of life <span>*</span>*</a></li>
-                    <li><a href="alg.html" class="link-2">The Algorithms of life<span>*</span>*</a></li>
-                    <li><a href="ana.html" class="link-2">The Anathomy of life <span>*</span>*</a></li>
-                    <li><a href="nev.html" class="link-2">Never Quit yet<span>*</span>*</a></li>
-                </ul>
-                <hr>
-            <ul>    
-                <p id="proj">My <u>projects</u>-<i>Accomplished</i> & <i>Ongoing</i>:</p>
-                <li><a href="Calculator.html" class="link-2">Scientific & Simple Calculator<span>*</span>*</a></li>
-                <li><a href="ngo.html" class="link-2">Ngo  Website<span>*</span>*</a></li>
-                <li><a href="multi.html" class="link-2">Multi-Projects<span>*</span>*</a></li>
-                <li>Long Timed Projects<span>*</span>*</li>
-            </ul>
+        <div>
+        
+        <!-- search items on search box -->
+            <div class="tested" id="drop_up" style="display: none; list-style: none;">
+                <a href="index.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">HOME</a>
+                <a href="about.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">ABOUT ME</a>
+                <a href="edu.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;" >EDUCATION</a>
+                <a href="pubs.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >PUBLICATIONS @ PROJECTS</a>
+                <a href="work.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >WORK-EXPERIENCE</a>
+                <a href="cont.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >CONTACT ME</a>
+                <a href="ngo.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >NGO WEBSITE</a>
+                <a href="nev.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >NEVER QUIT YET</a>
+                <a href="surv.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >SURVIVING THE ODDS OF</a>
+                <a href="Calculator.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >CALCULATORS FOR YOU</a>
+                <a href="https://w3schools.com" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >W3SCHOOLS FOR WEB DEVELOPERS</a>
+                <a href="https://nodejs.org/en" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >NODE JS FOR DEVELOPERS</a>
+                <a href="ana.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >ANATHOMY OF LIFE</a>
+                <a href="alg.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >ALGORITHM OF LIFE</a>
+                <a href="https://boxicons.com/" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >BOXICONS</a>
+                <a href="https://learn.gomycode.co/login" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >GOMYCODE ENVIRONMENT</a>
+                <a href="https://google.com" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >GOOGLE</a>
+               
+            </div>
+  
         </div>
-    
+        <div class="tested" id="dropdown">
+               <a href="index.html" class="hom">HOME</a>
+               <a href="about.html" class="hom">ABOUT ME</a>
+               <a href="edu.html" class="hom">EDUCATION</a>
+               <a href="work.html" class="hom">WORK-XPERIENCE</a>
+               <a href="cont.html" class="hom">CONTACT ME</a>
+               <a href="pubs.html" class="hom">MY PUBLICATIONS</a>
+        </div>
+        <i id ="open" class="fa-solid fa-bars" style="z-index: 2; color:white"></i>
+        <p id ="close" style="z-index: 2; color:white">X</p>
+        <p id="God">God is behind all sound learning world-wide:
+            <br> by Him and for Him, we shall tech the world!</p>
+    </nav>
+    <div id="ogaraga">
+        <h1>"Raymond Ogaraga Uche" is my name</h1>
+        <p id="raywise">You are warmly welcomed to my World!</p>
+    </div>
+    <!-- picture section and vital info -->
+    <section class="imag-info">
+        <i id="exact-timedate"></i>
+        <h3><em>Web-developer</em></h3>
+        <img src="my pic-1.jpg" alt="">
+        <p><span>Email</span>: raymond.ogaraga@gmail.com <br>
+        <span>Tel</span>: 08069304370 <br> 
+        <span>Hobbies</span>: Football, Tennis and writing <br>
+        <h2 style="text-indent: 7px;">Author: <a href="pubs.html">Click here! <b style="opacity: 0.5; font-size: 12px;">click disabled on mobile</b></a></h2>  
+        </p>
     </section>
-<!-- Footer section @ COPYRIGHTS -->
+    <!-- Social media contacts -->
+    <section class="social-media">
+        <p>You can reach out to me, view my social media contents by following: </p>
+        <div class="social-3">
+        <a href="https://web.facebook.com/Raymond Ogaraga/" class="linksocial"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://chat.whatsapp.com/CQMd2K0vJBF8IHndx4g4QZ/" class="linksocial"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://twitter.com/" class="linksocial"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" class="linksocial"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer section @ COPYRIGHTS -->
     <footer>
-        <p>The <em><b>Publications & Projects</b></em> are subject to Int'l copyrights &copy;2023. Trespassers are warned!</p>
+        <p>The <em><b>Publications & Projects</b></em> are subject to intl copyrights' laws and legislations &copy;2023. Trespassers are warned!</p>
     </footer>
+</section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <script>
-                // chatbot section and functionality
-                const enterMe = document.getElementById("enter");
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+<script>
+    const enterMe = document.getElementById("enter");
     var botChats = document.getElementById("chatbottext");
     let clickOnMe = document.getElementById("lets_chat");
     let endChat = document.getElementById("end");
@@ -216,9 +292,14 @@ enterMe.addEventListener("click", ()=>{
          "Are you married?":"Talk to me seriously",
          "What are you doing now?":"im with you",
          "What's going on?":"nothing buddy",
-         "Whats happening?":"nothing buddy",
+         "Whats happening?":"Great buddy",
          "Whats going on?":"nothing buddy",
          "What's up?":"nothing buddy",
+         "Good": "Nice to hear",
+         "Really?": "Yep",
+         "Hope all is well?": "Sure, you can count on me!",
+         "So, talk to me": "I'm talking friend",
+         "infinite?": "That's right, yea!",
          "Whats going on?":"nothing yeah",
          "Whats your name?": "i'm infinite",
          "What's your name?":"i'm infinite",
@@ -228,7 +309,7 @@ enterMe.addEventListener("click", ()=>{
          "What is your name?":"i'm infinite",
         
          "hello":"Hi, welcome to my world!",
-         "Hello": "Hi",
+         "Hello": "HI",
          "yeah":"How may i help?",
          "Yeah": "How can i help?",
          "hey":"Hello!",
@@ -315,52 +396,97 @@ enterMe.addEventListener("click", ()=>{
          "Cost of learning programming?":"it depends on your desire and scope of what you want",
      }; 
 
-     $(()=>{
-            $('.fa-toggle-on').click(()=>{
-            $('body').css("background", "gray");
+     
+// toggle modes for view interests.
+
+    $(()=>{
+        $('.fa-toggle-on').click(()=>{
+            $('body').css("backgroundColor", "gray");
             $('.fa-toggle-off').show();
             $('.fa-toggle-on').hide();
-            $('a').css("color", "red");
+            $('*').css("color", "aqua");
         });
-             $('.fa-toggle-off').click(()=>{
-            $('body').css("background", "salmon");
+        $('.fa-toggle-off').click(()=>{
+            $('body').css("backgroundColor", "#000");
             $('.fa-toggle-off').hide();
             $('.fa-toggle-on').show();
-            $('a').css("color", "lime");
+            $('*').css("color", "lime");
         });
     });
-
-        let myList = document.getElementById("mysearches");
-        let mybox = document.getElementById("mytext");
-        mybox.addEventListener("keyup", (e)=>{
-            if (myList.style.display === "none") {
-                myList.style.display = "inline-block";
-                myList.style.background = "grey";
+    const my_drop_down = document.getElementById("drop_up");
+    const mySearch = document.getElementById("mytext");
+    const myDropList = document.getElementsByClassName("humz");
+   
+    mySearch.addEventListener("keyup", (e)=>{
+        
+        if (my_drop_down.style.display === "none") {
+            my_drop_down.style.display = "flex";
+            my_drop_down.style.flexWrap = "wrap";
+            my_drop_down.style.fontSize = "1rem";
+            my_drop_down .style.background = "crimson";
+           
+        }
+        else{
+            my_drop_down.style.display = "none";
+        }
+        let value = e.target.value;
+        const filter = mySearch.value.toLowerCase();
+        let my_Element;
+        for(my_Element of myDropList){
+            let thembe = my_Element.innerHTML.toLowerCase();
+            if (thembe.includes(filter)) {
+                my_Element.style.display = "list-item";
             }
-            else{
-                myList.style.display = "none";
+            else {
+                my_Element.style.display = "none";
             }
+        }
+    })
 
-            var value = e.target.value;
-            let input, filter, elements;
-            input = document.getElementById("mytext");
-            filter = input.value.toLowerCase();
-            elements = document.getElementsByClassName("search");
-            let Myelements;
-            for(Myelements of elements){
-                let converted_elements = Myelements.textContent.toLowerCase();
-                    if(converted_elements.includes(filter)){
-                        Myelements.style.display = "block";
-                    }
-                    else{
-                        Myelements.style.display = "none";
-                    }
-                
-            }
-        })
+    let menu;
+    document.getElementById('open').onclick = function(){
+    menu = document.getElementById('dropdown');
+    if (menu.style.display == 'none' && document.getElementById('close').style.display == 'none' &&
+        document.getElementById('open').style.display == 'block') {
+    menu.style.display = 'block';
+    menu.style.backgroundColor = "gray";
+    menu.style.width = "130px";
+    menu.style.height = "270px";
+    menu.style.marginLeft = "-15px";
+    menu.style.marginTop = "-50px";
+    menu.style.zIndex = "1"; 
+    document.getElementById('close').style.display = 'block';
+    document.getElementById('open').style.display = 'none';
+    
+   }
+   else{
+    menu.style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+    document.getElementById('close').style.display = 'none';
 
+   }
+    
+
+    }
+
+    document.getElementById('close').onclick = function(){
+    menu = document.getElementById('dropdown');
+    if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    document.getElementById('close').style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+   }
+
+   else{
+    menu.style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+    document.getElementById('close').style.display = 'none';
+   }
+
+   
+ }
         const myGlass = document.getElementById('glass');
-        const myClose = document.getElementById('close');
+        const myClose = document.getElementById('klose');
         const myInput = document.getElementById('mytext');
         myGlass.onclick = () => {
             if (myInput.style.display == "none" && myClose.style.display == "none") {
@@ -389,6 +515,28 @@ enterMe.addEventListener("click", ()=>{
             }
         }
     
+    // alert("God is behind all sound learning world-wide: by Him and for Him, we shall tech the world! You're Welcome to my Portfolio!")
+       
+    //    preloader section
+       document.querySelector('#bodding').style.display = "none";
+       document.getElementById('loader').classList.add('preloader');
+       document.getElementById("mybody").style.background = "transparent";
+
+       setTimeout(() => {
+        document.getElementById('loader').classList.remove('preloader');
+        document.querySelector('#bodding').style.display = "block";
+        document.getElementById("mybody").style.background = "tomato";
         
+       }, 2000);
+    //    Time of your local device detected
+       setInterval(() => {
+       let ray;
+       ray = document.getElementById('exact-timedate');
+       ray.innerHTML = new Date().toLocaleString();
+       ray.style.color = 'aqua';
+       ray.style.textAlign = 'center';
+        
+    }, 1000);
        </script>
 </body>
+</html>
