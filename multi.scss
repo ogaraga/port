@@ -381,6 +381,35 @@ height: 100vh;
         }
     }
 }
+.fourth-work{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+    @media screen and (max-width:540px) {
+        width: auto;
+        max-height: 100vh;
+        height: auto;
+        margin: auto;
+        bottom: 0;
+    }
+    a{
+        color: wheat;
+        text-align: center;
+        font-size: 20px;
+        margin: 20px auto;
+        position: absolute;
+        top: 40px;
+        &:hover{
+            transition: all 1s;
+            color: saddlebrown;
+            font-variant: small-caps;
+            font-size: 19px;
+        }
+    }
+}
 
 }
 aside{
