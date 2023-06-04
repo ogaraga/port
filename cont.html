@@ -80,9 +80,9 @@
 
     <script>
         
-        var fullName,
-            male,female, age, feedMe, myForm, email, telephone;
-            document.getElementById("mybtns").onclick = function(){
+        var fullName, male, female, age, feedMe,
+            myForm, email, Submit, telephone;
+
             fullName = document.getElementById("texbox1");
             email = document.getElementById("email");
             telephone = document.getElementById("phone");
@@ -92,32 +92,23 @@
             feedMe = document.getElementById("mytextmgs");
             myForm = document.getElementById("contactme");
             const message = document.getElementById("message");
+             Submit = document.getElementById("mybtns");
             
+            Submit.onclick = function(){       
+            if(fullName.value !== ""  && email.value !== "" && telephone.value !== "" && age.value !== "" &&
+            message.value !== "" && (male.checked || female.checked) && feedMe.style.display === "none" && myForm.style.display === "block" ) {
             
-        
-            if(fullName.value != ""  && email.value != "" && telephone.value != "" && age.value != "" &&
-            message.value != "" && male.checked && feedMe.style.display == "none" && myForm.style.display == "block" ) {
             feedMe.style.display = "block";
             myForm.style.display = "none";
-            document.getElementById("mylabel7").innerHTML = "Form validated";
-            document.getElementById("mylabel7").style.color = "green";
-            return true;
             
         }
-            else if(fullName.value != "" && email.value != ""&& telephone != "" && age != "" && message.value !=""
-            && female.checked && feedMe.style.display == "none" && myForm.style.display == "block"){
-            feedMe.style.display = "block";
-            myForm.style.display = "none";
-            document.getElementById("mylabel7").innerHTML = "Form validated";
-            document.getElementById("mylabel7").style.color = "green";
-                return true;
-        }
+          
             else{
                 feedMe.style.display = "none";
                 myForm.style.display = "block";
                 document.getElementById("mylabel7").innerHTML =   "** pls reconfirm your entries before submission **";
                 document.getElementById("mylabel7").style.color = "red";
-                return false;
+                
             }
                 
         }     
