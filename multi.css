@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-y: visible;
 }
 
 .toggles .fa-toggle-on, .toggles .fa-toggle-off {
@@ -212,7 +213,7 @@
 }
 
 #mysection {
-  background: linear-gradient(to right, cyan, pink, teal, coral, black);
+  background: linear-gradient(to right, whitesmoke, grey, rebeccapurple, gray, white);
   width: auto;
   background-attachment: fixed;
   height: 100vh;
@@ -220,7 +221,7 @@
 @media screen and (max-width: 540px) {
   #mysection {
     width: 100%;
-    height: 100vh;
+    min-height: 120vh;
     margin: auto;
     padding: 20px;
   }
@@ -320,6 +321,7 @@
   font-size: 20px;
   margin: 20px auto;
   position: absolute;
+  font-weight: bold;
   bottom: 0;
 }
 #mysection .maindiv .first-work a:hover {
@@ -381,6 +383,7 @@
   margin: 20px auto;
   position: absolute;
   top: 40px;
+  font-weight: bold;
 }
 #mysection .maindiv .third-work a:hover {
   transition: all 1s;
@@ -412,6 +415,7 @@
   margin: 20px auto;
   position: absolute;
   top: 40px;
+  font-weight: bold;
 }
 #mysection .maindiv .fourth-work a:hover {
   transition: all 1s;
@@ -443,6 +447,7 @@
   margin: 10px auto;
   position: absolute;
   top: 20px;
+  font-weight: bold;
 }
 #mysection .maindiv .fifth-work a:hover {
   transition: all 1s;
