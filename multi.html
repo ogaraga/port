@@ -62,20 +62,26 @@
         // Toggle modes for view interests
     $(()=>{
         $('.fa-toggle-on').click(()=>{
-            $('body').css("background", "gray");
+            $('#mysection').css("background", "gray");
             $('.fa-toggle-off').show();
             $('.fa-toggle-on').hide();
             $('p').css("color", "black");
             $('a').css("color", "white" );
             $('h1').css("color", "red" );
+            $('a').hover(()=>{
+                $('a').css("color", "gold")
+            })  
         });
         $('.fa-toggle-off').click(()=>{
-            $('body').css("background", "#000");
+            $('#mysection').css("background", "#000");
             $('.fa-toggle-off').hide();
             $('.fa-toggle-on').show();
             $('p').css("color", "gold");
-            $('a').css("color", "blue" );
+            $('a').css("color", "teal" );
             $('h1').css("color", "white" );
+            $('a').hover(()=>{
+                $('a').css("color", "coral")
+            })
         });
     });
    

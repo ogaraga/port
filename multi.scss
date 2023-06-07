@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-y: visible;
 }
 .toggles{
     // background-color: black;
@@ -221,13 +222,13 @@ to{
 }
 
 #mysection{
-background: linear-gradient(to right, cyan, pink, teal, coral, black);
+background: linear-gradient(to right, whitesmoke, grey, rebeccapurple,gray, white);
 width: auto;
 background-attachment: fixed;
 height: 100vh;
 @media screen and (max-width:540px) {
     width: 100%;
-    height: 100vh;
+    min-height: 120vh;
     margin: auto;
     padding: 20px;
 }
@@ -317,6 +318,7 @@ height: 100vh;
         font-size: 20px;
         margin: 20px auto;
         position: absolute;
+        font-weight: bold;
         bottom: 0;
         &:hover{
             transition: all 1s;
@@ -374,6 +376,7 @@ height: 100vh;
         margin: 20px auto;
         position: absolute;
         top: 40px;
+        font-weight: bold;
         &:hover{
             transition: all 1s;
             color: black;
@@ -403,6 +406,7 @@ height: 100vh;
         margin: 20px auto;
         position: absolute;
         top: 40px;
+        font-weight: bold;
         &:hover{
             transition: all 1s;
             color: saddlebrown;
@@ -432,6 +436,7 @@ height: 100vh;
         margin: 10px auto;
         position: absolute;
         top: 20px;
+        font-weight: bold;
         &:hover{
             transition: all 1s;
             color: rgb(139, 19, 105);
