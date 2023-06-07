@@ -141,7 +141,7 @@ body .preloader-container .preloader {
   cursor: pointer;
   border: none;
   outline: none;
-  bottom: 10px;
+  bottom: -12px;
   display: block;
 }
 .chatbot-container .chatbot-message .input-block #enter:hover {
