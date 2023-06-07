@@ -313,7 +313,7 @@
     width: auto;
     height: auto;
     margin: auto;
-    top: 113px;
+    top: 130px;
   }
 }
 #mysection .maindiv .first-work a {
@@ -454,6 +454,30 @@
   color: rgb(139, 19, 105);
   font-variant: small-caps;
   font-size: 19px;
+}
+#mysection .maindiv .sixth-work {
+  display: flex;
+  justify-content: center;
+}
+#mysection .maindiv .sixth-work a {
+  margin: -6px auto;
+  color: chartreuse;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+}
+#mysection .maindiv .sixth-work a:hover {
+  cursor: pointer;
+  transition: all 0.7s;
+  color: rgb(0, 128, 119);
+}
+@media screen and (max-width: 600px) {
+  #mysection .maindiv .sixth-work {
+    margin: -5px auto;
+    text-align: center;
+    line-height: 1;
+  }
 }
 #mysection aside {
   text-align: center;
