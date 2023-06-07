@@ -370,8 +370,26 @@ font-size: 18px;
     margin-top: 270px;
 }
 
-@media screen and (max-width: 540px) {
-    #enter{
+}
+#enter{
+    width: auto;
+    padding: 13px;
+    position: absolute;
+    right: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    outline: none;
+    bottom: -42px;
+    cursor: pointer;
+    display: block;
+    &:hover{
+        background-color: aqua;
+        color: white;
+        transition: all 1s;
+    }
+
+    @media screen and (max-width: 540px) {
         padding: 13px;
         position: absolute;
         right: 35px;
@@ -381,27 +399,7 @@ font-size: 18px;
         outline: none;
         bottom: 71px;
         width: auto;
-
-    }
- 
 }
-#enter{
-    width: auto;
-    padding: 13px;
-    position: absolute;
-    right: 24px;
-    background-color: blueviolet;
-    color: white;
-    border: none;
-    outline: none;
-    bottom: 71px;
-    display: block;
-    &:hover{
-        background-color: aqua;
-        color: white;
-        transition: all 1s;
-    }
-
 }
 
 #textbox{
@@ -423,7 +421,7 @@ font-size: 18px;
 #end{
     padding: 10px;
     width: auto;
-    margin: auto 30%;
+    margin: auto 40%;
     margin-bottom: 10px;
     font-size: 18px;
     background-color: white;
@@ -444,7 +442,6 @@ font-size: 18px;
 }
 }
 
-}
 }
 
 #lets_chat{

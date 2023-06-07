@@ -103,40 +103,37 @@ font-size: 18px;
     place-content: center;
     margin-top: 270px;
 }
-@media screen and (max-width: 540px) {
-    #enter{
-        padding: 13px;
-        position: absolute;
-        right: 35px;
-        background-color: blueviolet;
-        color: white;
-        border: none;
-        outline: none;
-        bottom: 71px;
-        width: auto;
-
-    }
- 
 }
 #enter{
     width: auto;
     padding: 13px;
     position: absolute;
-    right: 24px;
+    right: 10px;
     background-color: blueviolet;
     color: white;
     border: none;
     outline: none;
-    bottom: 71px;
+    bottom: -12px;
     display: block;
+    cursor: pointer;
     &:hover{
         background-color: aqua;
         color: white;
         transition: all 1s;
     }
-
+    @media screen and (max-width: 540px) {
+            padding: 13px;
+            position: absolute;
+            right: 35px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            outline: none;
+            bottom: 71px;
+            width: auto;        
 }
 
+}
 #textbox{
     padding: 10px;
     width: auto;
@@ -156,7 +153,7 @@ font-size: 18px;
 #end{
     padding: 10px;
     width: auto;
-    margin: auto 30%;
+    margin: auto 40%;
     margin-bottom: 10px;
     font-size: 18px;
     background-color: white;
@@ -178,7 +175,7 @@ font-size: 18px;
 }
 
 }
-}
+
 
 #lets_chat{
 text-align: center;
@@ -311,7 +308,7 @@ height: 100vh;
         width: auto;
         height: auto;
         margin: auto;
-        top: 130px;
+        top: 155px;
     }
     a{
         color: midnightblue;
@@ -339,7 +336,7 @@ height: 100vh;
         width: auto;
         height: auto;
         margin: auto;
-        top: 130px;
+        top: 165px;
     }
     a{
         color: darkorange;
@@ -367,7 +364,7 @@ height: 100vh;
         width: auto;
         height: auto;
         margin: auto;
-        top: 170px;
+        top: 200px;
     }
     a{
         color: magenta;
@@ -397,7 +394,7 @@ height: 100vh;
         max-height: 100vh;
         height: auto;
         margin: auto;
-        top: 270px;
+        top: 310px;
     }
     a{
         color: tomato;
@@ -427,7 +424,7 @@ height: 100vh;
         max-height: 100vh;
         height: auto;
         margin:  10px auto;
-        top: 80px;
+        top: 110px;
     }
     a{
         color: yellow;
@@ -463,7 +460,7 @@ height: 100vh;
         }
     }
     @media screen and (max-width:600px) {
-        margin: -5px auto;
+        margin: 30px auto;
         text-align: center;
         line-height: 1;
     }
@@ -483,8 +480,8 @@ aside{
         @media screen and (max-width:540px) {
             width: auto;
             height: auto;
-            margin: -50px auto;
-            top: -10px;
+            margin:  -20px auto;
+            top: -100px;
             right: 20px;
         }
     }

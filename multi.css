@@ -102,8 +102,26 @@
     margin-top: 270px;
   }
 }
+.chatbot-container .chatbot-message #enter {
+  width: auto;
+  padding: 13px;
+  position: absolute;
+  right: 10px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  outline: none;
+  bottom: -12px;
+  display: block;
+  cursor: pointer;
+}
+.chatbot-container .chatbot-message #enter:hover {
+  background-color: aqua;
+  color: white;
+  transition: all 1s;
+}
 @media screen and (max-width: 540px) {
-  .chatbot-container .chatbot-message .input-block #enter {
+  .chatbot-container .chatbot-message #enter {
     padding: 13px;
     position: absolute;
     right: 35px;
@@ -115,24 +133,7 @@
     width: auto;
   }
 }
-.chatbot-container .chatbot-message .input-block #enter {
-  width: auto;
-  padding: 13px;
-  position: absolute;
-  right: 24px;
-  background-color: blueviolet;
-  color: white;
-  border: none;
-  outline: none;
-  bottom: 71px;
-  display: block;
-}
-.chatbot-container .chatbot-message .input-block #enter:hover {
-  background-color: aqua;
-  color: white;
-  transition: all 1s;
-}
-.chatbot-container .chatbot-message .input-block #textbox {
+.chatbot-container .chatbot-message #textbox {
   padding: 10px;
   width: auto;
   margin: 10px 15%;
@@ -144,30 +145,30 @@
   outline: none;
 }
 @media screen and (max-width: 540px) {
-  .chatbot-container .chatbot-message .input-block #textbox {
+  .chatbot-container .chatbot-message #textbox {
     width: auto;
     padding: 10px;
     margin: 10px;
   }
 }
-.chatbot-container .chatbot-message .input-block #end {
+.chatbot-container .chatbot-message #end {
   padding: 10px;
   width: auto;
-  margin: auto 30%;
+  margin: auto 40%;
   margin-bottom: 10px;
   font-size: 18px;
   background-color: white;
   border: none;
   outline: none;
 }
-.chatbot-container .chatbot-message .input-block #end:hover {
+.chatbot-container .chatbot-message #end:hover {
   cursor: pointer;
   background-color: crimson;
   color: blue;
   transition: all 0.3s;
 }
 @media screen and (max-width: 540px) {
-  .chatbot-container .chatbot-message .input-block #end {
+  .chatbot-container .chatbot-message #end {
     width: auto 30%;
     padding: 10px;
     margin: 10px;
@@ -313,7 +314,7 @@
     width: auto;
     height: auto;
     margin: auto;
-    top: 130px;
+    top: 155px;
   }
 }
 #mysection .maindiv .first-work a {
@@ -343,7 +344,7 @@
     width: auto;
     height: auto;
     margin: auto;
-    top: 130px;
+    top: 165px;
   }
 }
 #mysection .maindiv .second-work a {
@@ -373,7 +374,7 @@
     width: auto;
     height: auto;
     margin: auto;
-    top: 170px;
+    top: 200px;
   }
 }
 #mysection .maindiv .third-work a {
@@ -405,7 +406,7 @@
     max-height: 100vh;
     height: auto;
     margin: auto;
-    top: 270px;
+    top: 310px;
   }
 }
 #mysection .maindiv .fourth-work a {
@@ -437,7 +438,7 @@
     max-height: 100vh;
     height: auto;
     margin: 10px auto;
-    top: 80px;
+    top: 110px;
   }
 }
 #mysection .maindiv .fifth-work a {
@@ -474,7 +475,7 @@
 }
 @media screen and (max-width: 600px) {
   #mysection .maindiv .sixth-work {
-    margin: -5px auto;
+    margin: 30px auto;
     text-align: center;
     line-height: 1;
   }
@@ -495,8 +496,8 @@
   #mysection aside a {
     width: auto;
     height: auto;
-    margin: -50px auto;
-    top: -10px;
+    margin: -20px auto;
+    top: -100px;
     right: 20px;
   }
 }/*# sourceMappingURL=multi.css.map */

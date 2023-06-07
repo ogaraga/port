@@ -129,8 +129,25 @@ body{
         place-content: center;
         margin-top: 270px;
     }
-    @media screen and (max-width: 540px) {
-        #enter{
+    
+    #enter{
+        width: auto;
+        padding: 13px;
+        position: absolute;
+        right: 10px;
+        background-color: blueviolet;
+        color: white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        bottom: 10px;
+        display: block;
+        &:hover{
+            background-color: aqua;
+            color: white;
+            transition: all 1s;
+        }
+        @media screen and (max-width: 540px) {
             padding: 13px;
             position: absolute;
             right: 35px;
@@ -142,25 +159,6 @@ body{
             width: auto;
     
         }
-     
-    }
-    #enter{
-        width: auto;
-        padding: 13px;
-        position: absolute;
-        right: 24px;
-        background-color: blueviolet;
-        color: white;
-        border: none;
-        outline: none;
-        bottom: 71px;
-        display: block;
-        &:hover{
-            background-color: aqua;
-            color: white;
-            transition: all 1s;
-        }
-
     }
 
     #textbox{
@@ -182,7 +180,7 @@ body{
     #end{
         padding: 10px;
         width: auto;
-        margin: auto 30%;
+        margin: auto 40%;
         margin-bottom: 10px;
         font-size: 18px;
         background-color: white;
