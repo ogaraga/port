@@ -39,14 +39,14 @@
         
         </div>
             <div class="form-home mt-4">
-        <form class="bg-primary mt-1 p-3" id="empty" for = "/index.html" method="post" class="was-validated">
+        <form onsubmit=" EmailSent(); reset(); return false; " class="bg-primary mt-1 p-3" id="empty" method="post">
             <div>
                 <label id="mylabel1" class="form-label">Full Name</label><br>
                 <input type="text" id="texbox1" autocomplete="on" class="form-control" placeholder="Enter your names here" required><br> <br>
                 <label id="mylabel" class="form-label">Email</label><br>
                 <input type="email" name="email" id="email" autocomplete="on" class="form-control" placeholder="example@good.com" required><br><br>
                 <label id="mylabeltel" class="form-label">Tel</label><br>
-                <input type="tel" name="phone" id="phone" autocomplete="on" class="form-control" pattern="08069304370" placeholder="Enter your telephone" required><br><br>
+                <input type="tel" name="phone" id="phone" autocomplete="on" class="form-control" placeholder="Enter your telephone" required><br><br>
             </div>
             <div>
                 <label id="mylabel2" class="form-check">Gender</label><br>
@@ -72,7 +72,7 @@
             </select><br><br>
             <textarea name="message" id="message" class="form-control" minlength="15" maxlength="200" cols="30" rows="5" placeholder="Enter your message here" required></textarea> <br>
             <button type="reset" id="myreset">Reset</button>
-            <button type="button" id="mybtns">Submit</button> <br>
+            <button type="submit" id="mybtns">Submit</button> <br>
            
             <!-- Conditional statement-label if a condition turns false -->
             <label id="mylabel7"></label> <br> 
@@ -82,41 +82,59 @@
 
             <!-- Bootstrap CDN js bundle here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    
+    
     <script>
-        
-        var fullName, male, female, age, feedMe,
-            myForm, email, Submit, telephone;
-
-            fullName = document.getElementById("texbox1");
-            email = document.getElementById("email");
-            telephone = document.getElementById("phone");
-            male = document.getElementById("radiobox1");
-            female = document.getElementById("radiobox2");
-            age = document.getElementById("myage");
-            feedMe = document.getElementById("mytextmgs");
-            myForm = document.getElementById("contactme");
-            const message = document.getElementById("message");
-             Submit = document.getElementById("mybtns");
-            
-            Submit.onclick = function(){       
-            if(fullName.value !== ""  && email.value !== "" && telephone.value !== "" && age.value !== "" &&
-            message.value !== "" && (male.checked || female.checked) && feedMe.style.display === "none" && myForm.style.display === "block" ) {
-            
-            feedMe.style.display = "block";
-            myForm.style.display = "none";
-            
+        function EmailSent() {
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "raymond.ogaraga@gmail.com",
+                Password : "4C381F9707312A6502461A172DEB623A75B7",
+                To : 'raymond.ogaraga@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Contact Message",
+                Body : "Message is received from a visitor"
+            }).then(
+            message => alert(message)
+        );
+   
         }
+        
+
+
+        // var fullName, male, female, age, feedMe,
+        //     myForm, email, Submit, telephone;
+
+        //     fullName = document.getElementById("texbox1");
+        //     email = document.getElementById("email");
+        //     telephone = document.getElementById("phone");
+        //     male = document.getElementById("radiobox1");
+        //     female = document.getElementById("radiobox2");
+        //     age = document.getElementById("myage");
+        //     feedMe = document.getElementById("mytextmgs");
+        //     myForm = document.getElementById("contactme");
+        //     const message = document.getElementById("message");
+        //      Submit = document.getElementById("mybtns");
+        
+        //     Submit.onclick = function(){       
+        //     if(fullName.value !== ""  && email.value !== "" && telephone.value !== "" && age.value !== "" &&
+        //     message.value !== "" && (male.checked || female.checked) && feedMe.style.display === "none" && myForm.style.display === "block" ) {
+        //     feedMe.style.display = "block";
+        //     myForm.style.display = "none";
+            
+        // }
           
-            else{
-                feedMe.style.display = "none";
-                myForm.style.display = "block";
-                document.getElementById("mylabel7").innerHTML =   "** pls reconfirm your entries before submission **";
-                document.getElementById("mylabel7").style.color = "red";
+        //     else{
+        //         feedMe.style.display = "none";
+        //         myForm.style.display = "block";
+        //         document.getElementById("mylabel7").innerHTML =   "** pls reconfirm your entries before submission **";
+        //         document.getElementById("mylabel7").style.color = "red";
                 
-            }
+        //     }
                 
-        }     
+        // }     
 
         
     </script>
