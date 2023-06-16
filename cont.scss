@@ -52,6 +52,12 @@ body{
         margin-top: 70px;
         position: absolute;
         right: 10%;
+        &:hover{
+            color: goldenrod;
+            transition: all 0.8s;
+            font-variant: small-caps;
+            font-size: 15px;
+        }
 
        }
     }

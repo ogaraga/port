@@ -57,6 +57,12 @@ body .contact-me .intro a {
   position: absolute;
   right: 10%;
 }
+body .contact-me .intro a:hover {
+  color: goldenrod;
+  transition: all 0.8s;
+  font-variant: small-caps;
+  font-size: 15px;
+}
 body .contact-me .form-home {
   display: flex;
   align-items: center;
