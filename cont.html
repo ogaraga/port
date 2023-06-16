@@ -106,11 +106,19 @@
                 Host : "smtp.gmail.com",
                 Username : "raymond.ogaraga@gmail.com",
                 Password : "4C381F9707312A6502461A172DEB623A75B7",
-                To : 'raymond.ogaraga@gmail.com',
+                To : "raymond.ogaraga@gmail.com",
                 From : document.getElementById("email").value,
-                Subject : "Contact Message",
-                Body : "Message is received from a visitor"
-            }).then(
+                Subject : " Visitor's contact Message",
+                Body : "Name:" + document.getElementById("texbox1").value
+                    + "<br> email:" + document.getElementById("email").value
+                    + "<br> Phone:" + document.getElementById("phone").value
+                    + "<br> Gender:" + document.getElementById("radiobox1").value
+                    + "<br> Gender:" + document.getElementById("radiobox2").value
+                    + "<br> Message:"+ document.getElementById("message").value
+                    + "<br> Country/Continent:" + document.getElementById("selectme").value
+                 
+            
+                }).then(
                 
                    message => alert("Form successfully sent as shown by the feedback message on the page!")                           
             
