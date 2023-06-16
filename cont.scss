@@ -101,6 +101,12 @@ body{
             font-size: 20px;
             font-weight: bold;
             width: 100%;
+            &:hover{
+                cursor: pointer;
+            }
+            &:focus{
+                background-color: coral;
+            }
         }
         #radiobox2, #radiobox1{
             width: auto;
@@ -130,6 +136,7 @@ body{
             border: none;
             outline: none;
             background-color: burlywood;
+            cursor: pointer;
 
             @media screen and (max-width: 540px) {
                width: 280px;
