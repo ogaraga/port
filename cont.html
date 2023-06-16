@@ -39,26 +39,29 @@
         
         </div>
             <div class="form-home mt-4">
-        <form onsubmit=" EmailSent(); reset(); return false" class="bg-primary mt-1 p-3" id="empty" method="post">
+        <form action="https://formsubmit.co/raymond.ogaraga@gmail.com" class="bg-primary mt-1 p-3" id="empty" method="post">
             <div>
                 <label id="mylabel1" class="form-label">Full Name</label><br>
-                <input type="text" id="texbox1" autocomplete="on" class="form-control" placeholder="Enter your names here" required><br> <br>
+                <input type="text" name="FullName" id="texbox1" autocomplete="on" class="form-control" placeholder="Enter your names here" required><br> <br>
                 <label id="mylabel" class="form-label">Email</label><br>
-                <input type="email" name="email" id="email" autocomplete="on" class="form-control" placeholder="example@good.com" required><br><br>
+                <input type="email" name="Email" id="email" autocomplete="on" class="form-control" placeholder="example@good.com" required><br><br>
                 <label id="mylabeltel" class="form-label">Tel</label><br>
-                <input type="tel" name="phone" id="phone" autocomplete="on" class="form-control" placeholder="Enter your telephone" required><br><br>
+                <input type="tel" name="Phone" id="phone" autocomplete="on" class="form-control" placeholder="Enter your telephone" required><br><br>
             </div>
             <div>
+                <input type="hidden" name="_next" value="https://port-ogaraga.vercel.app/cont.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
                 <label id="mylabel2" class="form-check">Gender</label><br>
-                <input type="radio" name="radio" id="radiobox1" class="form-check-input">
+                <input type="radio" name="Male" id="radiobox1" class="form-check-input">
                 <label id="mylabel3" class="form-check">Male</label>
-                <input type="radio" name="radio" id="radiobox2" class="form-check-input">
+                <input type="radio" name="Female" id="radiobox2" class="form-check-input">
                 <label id="mylabel4" class="form-check">Female</label><br>
             </div>
             <label id="mylabel5" class="form-label">Your age</label> <br>
-            <input type="number" name="number" id="myage" class="form-control" required> <br> <br>
+            <input type="number" name="SenderAge" id="myage" class="form-control" required> <br> <br>
             <label id="mylabel6" class="form-label">location</label> <br> 
-            <select id="selectme" class="form-control" required>
+            <select id="selectme" name="Country/Continent" class="form-control" required>
                 <option selected disabled value= "location">Select your location</option>
                 <option value="Nigeria">Nigeria</option>
                 <option value="USA">USA</option>
@@ -70,7 +73,7 @@
                 <option value="AFRICA">AFRICA</option>
                 <option value="ASIA">ASIA</option>
             </select><br><br>
-            <textarea name="message" id="message" class="form-control" minlength="15" maxlength="200" cols="30" rows="5" placeholder="Enter your message here" required></textarea> <br>
+            <textarea name="Message" id="message" class="form-control" minlength="15" maxlength="200" cols="30" rows="5" placeholder="Enter your message here" required></textarea> <br>
             <button type="reset" id="myreset">Reset</button>
             <button type="submit" id="mybtns" onclick="mySubmit()">Submit</button> <br>
            
@@ -101,28 +104,6 @@
                 Submit = document.getElementById("mybtns");
             
 
-        function EmailSent() {
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "raymond.ogaraga@gmail.com",
-                Password : "4C381F9707312A6502461A172DEB623A75B7",
-                To : "raymond.ogaraga@gmail.com",
-                From : document.getElementById("email").value,
-                Subject : " Visitor's contact Message",
-                Body : "Name:" + document.getElementById("texbox1").value
-                    + "<br> email:" + document.getElementById("email").value
-                    + "<br> Phone:" + document.getElementById("phone").value
-                    + "<br> Gender:" + document.getElementById("radiobox1").value
-                    + "<br> Gender:" + document.getElementById("radiobox2").value
-                    + "<br> Message:"+ document.getElementById("message").value
-                    + "<br> Country/Continent:" + document.getElementById("selectme").value
-                 
-            
-                }).then(
-                
-                   message => alert("Form successfully sent as shown by the feedback message on the page!")                           
-            
-        )};
         function mySubmit(){   
                 if(fullName.value != ""  && email.value != "" && telephone.value != "" && age.value != "" &&
                 message.value != "" && (male.checked || female.checked)) {
@@ -142,6 +123,26 @@
             };
         
         
+        // function EmailSent() {
+        //     Email.send({
+        //         Securedtoken: "79deb844-1ad9-415e-88e0-173cdccfa539",
+        //         To : "raymond.ogaraga@gmail.com",
+        //         From : document.getElementById("email").value,
+        //         Subject : " Visitor's contact Message",
+        //         Body : "Name:" + document.getElementById("texbox1").value
+        //             + "<br> email:" + document.getElementById("email").value
+        //             + "<br> Phone:" + document.getElementById("phone").value
+        //             + "<br> Gender:" + document.getElementById("radiobox1").value
+        //             + "<br> Gender:" + document.getElementById("radiobox2").value
+        //             + "<br> Message:"+ document.getElementById("message").value
+        //             + "<br> Country/Continent:" + document.getElementById("selectme").value
+                 
+            
+        //         }).then(
+                
+        //            message => alert("Form successfully sent as shown by the feedback message on the page!")                           
+            
+        // )};
         
     </script>
     

@@ -31,7 +31,7 @@ body{
     }
     .intro{
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
        @media screen and (max-width: 540px) {
         width: auto;
         margin: auto;
