@@ -9,7 +9,7 @@
   position: fixed;
   font-size: 20px;
   opacity: 1;
-  background-color: black;
+  background-color: rgb(0, 109, 0);
   padding: 10px;
   color: white;
   top: 10px;
@@ -217,12 +217,13 @@
   background: linear-gradient(to right, whitesmoke, grey, rebeccapurple, gray, white);
   width: auto;
   background-attachment: fixed;
-  height: 100vh;
+  max-height: 200vh;
+  height: 750px;
 }
 @media screen and (max-width: 540px) {
   #mysection {
     width: 100%;
-    min-height: 120vh;
+    min-height: 600px;
     margin: auto;
     padding: 20px;
   }
@@ -325,6 +326,11 @@
   font-weight: bold;
   bottom: 0;
 }
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .first-work a {
+    top: -98px;
+  }
+}
 #mysection .maindiv .first-work a:hover {
   transition: all 1s;
   color: aqua;
@@ -354,6 +360,11 @@
   position: absolute;
   top: 30px;
   font-weight: bold;
+}
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .second-work a {
+    top: -60px;
+  }
 }
 #mysection .maindiv .second-work a:hover {
   transition: all 1s;
@@ -386,6 +397,11 @@
   top: 40px;
   font-weight: bold;
 }
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .third-work a {
+    top: -23px;
+  }
+}
 #mysection .maindiv .third-work a:hover {
   transition: all 1s;
   color: black;
@@ -405,8 +421,8 @@
     width: auto;
     max-height: 100vh;
     height: auto;
-    margin: auto;
-    top: 310px;
+    margin: 10px auto;
+    top: 330px;
   }
 }
 #mysection .maindiv .fourth-work a {
@@ -415,8 +431,13 @@
   font-size: 20px;
   margin: 20px auto;
   position: absolute;
-  top: 40px;
+  top: 10px;
   font-weight: bold;
+}
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .fourth-work a {
+    top: -70px;
+  }
 }
 #mysection .maindiv .fourth-work a:hover {
   transition: all 1s;
@@ -450,6 +471,11 @@
   top: 20px;
   font-weight: bold;
 }
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .fifth-work a {
+    top: 8px;
+  }
+}
 #mysection .maindiv .fifth-work a:hover {
   transition: all 1s;
   color: rgb(139, 19, 105);
@@ -468,6 +494,11 @@
   font-variant: small-caps;
   text-align: center;
 }
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .sixth-work a {
+    margin-top: -30px;
+  }
+}
 #mysection .maindiv .sixth-work a:hover {
   cursor: pointer;
   transition: all 0.7s;
@@ -478,6 +509,81 @@
     margin: 30px auto;
     text-align: center;
     line-height: 1;
+  }
+}
+#mysection .maindiv .seventh-work {
+  margin: auto;
+  display: flex;
+  top: 260px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .seventh-work {
+    width: auto;
+    max-height: 100vh;
+    height: auto;
+    margin: 10px auto;
+    top: 137px;
+  }
+}
+#mysection .maindiv .seventh-work a {
+  color: rgb(120, 105, 255);
+  text-align: center;
+  font-size: 20px;
+  margin: 10px auto;
+  position: absolute;
+  font-weight: bold;
+  top: 90px;
+}
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .seventh-work a {
+    top: 110px;
+  }
+}
+#mysection .maindiv .seventh-work a:hover {
+  transition: all 1s;
+  color: rgb(105, 130, 108);
+  font-variant: small-caps;
+  font-size: 19px;
+}
+#mysection .maindiv .eight-work {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+}
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .eight-work {
+    width: auto;
+    max-height: 100vh;
+    height: auto;
+    margin: 10px auto;
+    top: 300px;
+    padding: 10px;
+  }
+}
+#mysection .maindiv .eight-work a {
+  color: lightseagreen;
+  text-align: center;
+  font-size: 20px;
+  top: 10px;
+  margin: 10px auto;
+  position: absolute;
+  font-weight: bold;
+}
+#mysection .maindiv .eight-work a:hover {
+  transition: all 1s;
+  color: rgb(139, 190, 105);
+  font-variant: small-caps;
+  font-size: 19px;
+}
+@media screen and (max-width: 540px) {
+  #mysection .maindiv .eight-work a {
+    top: -15px;
   }
 }
 #mysection aside {
