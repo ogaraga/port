@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: gray;
   width: 100vw;
   height: 100vh;
 }
@@ -29,6 +29,11 @@ body .contact-me {
     height: auto;
     border: none;
   }
+}
+body .contact-me .fill_in #register:hover {
+  color: magenta;
+  transition: all 0.6s;
+  font-size: 22px;
 }
 body .contact-me .intro {
   display: flex;

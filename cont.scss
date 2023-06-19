@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #000;
+    background-color: gray;
     width: 100vw;
     height: 100vh;
     @media screen and (max-width: 540px) {
@@ -28,6 +28,15 @@ body{
     height: auto;
     border: none;
         
+    }
+    .fill_in{
+        #register{
+        &:hover{
+            color: magenta;
+            transition: all 0.6s;
+            font-size: 22px;
+        }
+    }
     }
     .intro{
        display: flex;
@@ -200,7 +209,8 @@ body{
     }
 
 }
-} 
 
+} 
 }
+
 

@@ -28,7 +28,7 @@
 
 
     <!-- contact me section -->
-    <section class="contact-me" id="contactme">
+<section class="contact-me" id="contactme">
        
         
        <!--Form area-section  -->
@@ -36,9 +36,11 @@
             <p>Please, kindly fill in your details below</p>
         <!-- a link to home page -->
             <a href="index.html" class="link">BACK HOME?</a>
-        
         </div>
-            <div class="form-home mt-4">
+        <div class="fill_in" style="text-align: center;">
+            <a id="register" style="color: aqua; font-size: 20px; cursor: pointer;" href="#">Click to fill in your details</a>
+        </div>
+    <div class="form-home mt-4" style="display: none;">
         <form action="https://formsubmit.co/raymond.ogaraga@gmail.com" class="bg-primary mt-1 p-3" id="empty" method="post">
             <div>
                 <label id="mylabel1" class="form-label">Full Name</label><br>
@@ -80,16 +82,21 @@
             <!-- Conditional statement-label if a condition turns false -->
             <label id="mylabel7"></label> <br> 
         </form>
-        
-    </section>
+    </div>
+</section>
 
             <!-- Bootstrap CDN js bundle here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     
     <script>
+        $(document).ready( function(){
+         $("#register").click(function() {
+            $(".form-home").toggle();
+         });   
+        });
             var fullName, male, female, age, feedMe,
                 myForm, email, Submit, telephone;
                 fullName = document.getElementById("texbox1");
