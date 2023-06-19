@@ -61,7 +61,7 @@
                 <label id="mylabel4" class="form-check">Female</label><br>
             </div>
             <label id="mylabel5" class="form-label">Your age</label> <br>
-            <input type="number" name="SenderAge" id="myage" class="form-control" required> <br> <br>
+            <input type="number" name="SenderAge" id="myage" class="form-control" placeholder="(Optional)"> <br> <br>
             <label id="mylabel6" class="form-label">location</label> <br> 
             <select id="selectme" name="Country/Continent" class="form-control" required>
                 <option selected disabled value= "location">Select your location</option>
@@ -112,7 +112,7 @@
             
 
         function mySubmit(){   
-                if(fullName.value != ""  && email.value != "" && telephone.value != "" && age.value != "" &&
+                if(fullName.value != ""  && email.value != "" && telephone.value != "" &&
                 message.value != "" && (male.checked || female.checked)) {
                 feedMe.style.display = "block";
                 myForm.style.display = "none";
