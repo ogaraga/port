@@ -89,17 +89,19 @@ body .contact-me form {
 body .contact-me form .wrapper_1.active {
   width: 50%;
   position: absolute;
-  top: 35%;
+  left: 30%;
   transition: all 1s ease;
   padding: 10px;
   margin: 10px auto;
   background-color: blue;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body .contact-me form .wrapper_1.active {
     width: auto;
     margin: auto;
-    top: 45%;
+    margin-right: 20px;
+    top: auto;
+    left: 9%;
     padding: 10px;
   }
 }
@@ -176,7 +178,7 @@ body .contact-me form .wrapper_1.active input:focus {
 body .contact-me form .wrapper_1 {
   width: 50%;
   position: absolute;
-  top: -1400px;
+  left: -1400px;
   transition: all 1s ease-in;
   padding: 10px;
   margin: auto;
