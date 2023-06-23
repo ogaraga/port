@@ -420,7 +420,7 @@ enterMe.addEventListener("click", ()=>{
     const myDropList = document.getElementsByClassName("humz");
    
     mySearch.addEventListener("keyup", (e)=>{
-        
+        e.preventDefault();
         if (my_drop_down.style.display === "none") {
             my_drop_down.style.display = "flex";
             my_drop_down.style.flexWrap = "wrap";
@@ -446,43 +446,46 @@ enterMe.addEventListener("click", ()=>{
     })
 
     let menu;
-    document.getElementById('open').onclick = function(){
-    menu = document.getElementById('dropdown');
-    if (menu.style.display == 'none' && document.getElementById('close').style.display == 'none' &&
-        document.getElementById('open').style.display == 'block') {
-    menu.style.display = 'block';
-    menu.style.backgroundColor = "gray";
-    menu.style.width = "130px";
-    menu.style.height = "270px";
-    menu.style.marginLeft = "-15px";
-    menu.style.marginTop = "-50px";
-    menu.style.zIndex = "1"; 
-    document.getElementById('close').style.display = 'block';
-    document.getElementById('open').style.display = 'none';
+    document.querySelector('#open').onclick = function(){
+    menu = document.querySelector('#dropdown');
+    if (menu.style.display == 'none') {
+        menu.style.display = 'block';
+        menu.style.position = "absolute";
+        menu.style.top = "0%";
+        menu.style.transition = "all 1s ease";
+        menu.style.backgroundColor = "gray";
+        menu.style.width = "150px";
+        menu.style.height = "275px";
+        menu.style.marginLeft = "-25px";
+        menu.style.marginTop = "-50px";
+        menu.style.zIndex = "1"; 
+        document.querySelector('#close').style.display = 'block';
+        document.querySelector('#open').style.display = 'none';
     
    }
    else{
     menu.style.display = 'none';
-    document.getElementById('open').style.display = 'block';
-    document.getElementById('close').style.display = 'none';
+    document.querySelector('#open').style.display = 'block';
+    document.querySelector('#close').style.display = 'none';
 
    }
     
 
     }
 
-    document.getElementById('close').onclick = function(){
-    menu = document.getElementById('dropdown');
+    document.querySelector('#close').onclick = function(){
+    menu = document.querySelector('#dropdown');
     if (menu.style.display === 'block') {
     menu.style.display = 'none';
-    document.getElementById('close').style.display = 'none';
-    document.getElementById('open').style.display = 'block';
+    menu.style.transiton = "all 1s ease-in";
+    document.querySelector('#close').style.display = 'none';
+    document.querySelector('#open').style.display = 'block';
    }
 
    else{
     menu.style.display = 'none';
-    document.getElementById('open').style.display = 'block';
-    document.getElementById('close').style.display = 'none';
+    document.querySelector('#open').style.display = 'block';
+    document.querySelector('#close').style.display = 'none';
    }
 
    
