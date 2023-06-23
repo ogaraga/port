@@ -21,8 +21,8 @@
             form_2.style.display = "block";
             form_1.style.display = "none";
             myLabel.innerHTML = "";
-            male.checked = !male.checked;
-            female.checked = !female.checked;
+            !male.checked;
+            !female.checked;
             
         }
         else{
@@ -37,8 +37,8 @@
                 form_1.style.display = "block";
                 form_2.style.display = "none";
                 myLab.innerHTML = "";
-                male.checked = !male.checked;
-                female.checked = !female.checked;
+                !male.checked;
+                !female.checked;
             }
             else{
                 form_2.style.display = "block";
