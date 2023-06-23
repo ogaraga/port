@@ -7,17 +7,19 @@
 body {
   background-color: gray;
   width: 100vw;
-  height: 100vh;
 }
 @media screen and (max-width: 540px) {
   body {
     margin: auto;
     width: auto;
+    height: auto;
   }
 }
 body .contact-me {
   color: #fff;
-  margin-top: -35px;
+  margin: auto;
+  height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,13 +29,7 @@ body .contact-me {
   body .contact-me {
     width: auto;
     height: auto;
-    border: none;
   }
-}
-body .contact-me .fill_in #register:hover {
-  color: magenta;
-  transition: all 0.6s;
-  font-size: 22px;
 }
 body .contact-me .intro {
   display: flex;
@@ -68,45 +64,98 @@ body .contact-me .intro a:hover {
   font-variant: small-caps;
   font-size: 15px;
 }
-body .contact-me .form-home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  justify-content: center;
+body .contact-me .fill_in {
+  margin: 20px auto;
 }
-@media screen and (max-width: 540px) {
-  body .contact-me .form-home {
-    display: grid;
-  }
+body .contact-me .fill_in #register {
+  text-align: center;
+  font-size: 20px;
+  color: aqua;
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 10;
 }
-@media screen and (max-width: 960px) {
-  body .contact-me .form-home {
-    display: grid;
-    border: none;
-  }
+body .contact-me .fill_in #register:hover {
+  color: magenta;
+  transition: all 0.9s;
+  font-size: 22px;
 }
-body .contact-me .form-home form {
-  margin: 30px 50%;
+body .contact-me form {
   font-size: 20px;
   padding: 20px;
+  height: 70vh;
+  width: 100%;
 }
-@media screen and (max-width: 540px) {
-  body .contact-me .form-home form {
-    margin: auto;
+body .contact-me form .wrapper_1.active {
+  width: 50%;
+  position: absolute;
+  top: 35%;
+  transition: all 1s ease;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: blue;
+}
+@media screen and (max-width: 600px) {
+  body .contact-me form .wrapper_1.active {
     width: auto;
+    margin: auto;
+    top: 45%;
+    padding: 10px;
   }
 }
-body .contact-me .form-home form #mylabel1, body .contact-me .form-home form #mylabel2, body .contact-me .form-home form #mylabel5, body .contact-me .form-home form #mylabel6, body .contact-me .form-home form #mylabeltel, body .contact-me .form-home form #mylabel {
+body .contact-me form .wrapper_1.active #btns_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .contact-me form .wrapper_1.active #btns_1 #myreset {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: gray;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1.active #btns_1 #myreset {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1.active #btns_1 #myreset:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: white;
+}
+body .contact-me form .wrapper_1.active #btns_1 #next {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: green;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1.active #btns_1 #next {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1.active #btns_1 #next:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: white;
+}
+body .contact-me form .wrapper_1.active #mylabel1, body .contact-me form .wrapper_1.active #mylabeltel, body .contact-me form .wrapper_1.active #mylabel {
   text-transform: uppercase;
 }
-body .contact-me .form-home form #mylabel3, body .contact-me .form-home form #mylabel4 {
-  margin-top: -35px;
-}
-body .contact-me .form-home form #mylabel2 {
-  text-align: justify;
-  margin: -20px -30px;
-}
-body .contact-me .form-home form input {
+body .contact-me form .wrapper_1.active input {
   padding: 10px;
   border-radius: 10px;
   text-align: justify;
@@ -118,17 +167,200 @@ body .contact-me .form-home form input {
   font-weight: bold;
   width: 100%;
 }
-body .contact-me .form-home form input:hover {
+body .contact-me form .wrapper_1.active input:hover {
   cursor: pointer;
 }
-body .contact-me .form-home form input:focus {
+body .contact-me form .wrapper_1.active input:focus {
   background-color: coral;
 }
-body .contact-me .form-home form #radiobox2, body .contact-me .form-home form #radiobox1 {
-  width: auto;
+body .contact-me form .wrapper_1 {
+  width: 50%;
+  position: absolute;
+  top: -1400px;
+  transition: all 1s ease-in;
+  padding: 10px;
+  margin: auto;
+  background-color: blue;
+}
+@media screen and (max-width: 600px) {
+  body .contact-me form .wrapper_1 {
+    width: auto;
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+body .contact-me form .wrapper_1 #btns_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .contact-me form .wrapper_1 #btns_1 #myreset {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: gray;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1 #btns_1 #myreset {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1 #btns_1 #myreset:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: white;
+}
+body .contact-me form .wrapper_1 #btns_1 #next {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: green;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1 #btns_1 #next {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1 #btns_1 #next:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: white;
+}
+body .contact-me form .wrapper_1 #mylabel1, body .contact-me form .wrapper_1 #mylabeltel, body .contact-me form .wrapper_1 #mylabel {
+  text-transform: uppercase;
+}
+body .contact-me form .wrapper_1 input {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  outline: none;
+  border: none;
+  margin-bottom: -25px;
+  background-color: burlywood;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+body .contact-me form .wrapper_1 input:hover {
+  cursor: pointer;
+}
+body .contact-me form .wrapper_1 input:focus {
+  background-color: coral;
+}
+body .contact-me form .wrapper_2 {
+  width: 50%;
+  margin: auto;
+  display: none;
+  padding: 10px;
+  background-color: blue;
+}
+@media screen and (max-width: 600px) {
+  body .contact-me form .wrapper_2 {
+    width: auto;
+    margin: auto;
+    padding: 10px;
+  }
+}
+body .contact-me form .wrapper_2 .btns_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .contact-me form .wrapper_2 .btns_2 #prev {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  margin: auto;
+  outline: none;
+  width: 40%;
+  font-size: 20px;
+  background-color: gray;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_2 .btns_2 #prev {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_2 .btns_2 #prev:hover {
+  cursor: pointer;
+  background-color: gold;
+  color: red;
+}
+body .contact-me form .wrapper_2 .btns_2 #mybtns {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  margin: auto;
+  outline: none;
+  width: 40%;
+  font-size: 20px;
+  background-color: aqua;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_2 .btns_2 #mybtns {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_2 .btns_2 #mybtns:hover {
+  cursor: pointer;
+  background-color: gold;
+  color: red;
+}
+body .contact-me form .wrapper_2 #mylabel5, body .contact-me form .wrapper_2 #mylabel6 {
+  text-transform: uppercase;
+}
+body .contact-me form .wrapper_2 #radio-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+body .contact-me form .wrapper_2 #radio-radio #mylabel3, body .contact-me form .wrapper_2 #radio-radio #mylabel4 {
+  margin-top: auto;
+}
+body .contact-me form .wrapper_2 #radio-radio #mylabel2 {
+  margin-left: 0px;
+  text-transform: uppercase;
+}
+body .contact-me form .wrapper_2 #radio-radio #radiobox2, body .contact-me form .wrapper_2 #radio-radio #radiobox1 {
+  width: 20px;
   margin: auto;
 }
-body .contact-me .form-home form select {
+body .contact-me form .wrapper_2 input {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  outline: none;
+  border: none;
+  margin-bottom: -25px;
+  background-color: burlywood;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+body .contact-me form .wrapper_2 input:hover {
+  cursor: pointer;
+}
+body .contact-me form .wrapper_2 input:focus {
+  background-color: coral;
+}
+body .contact-me form .wrapper_2 select {
   text-align: justify;
   border-radius: 10px;
   padding: 10px;
@@ -140,13 +372,13 @@ body .contact-me .form-home form select {
   width: 100%;
   background-color: burlywood;
 }
-body .contact-me .form-home form textarea {
+body .contact-me form .wrapper_2 textarea {
   text-align: justify;
   font-size: 20px;
   margin-top: 20px;
   font-weight: bold;
-  padding: 20px;
-  width: auto;
+  padding: 10px;
+  width: 100%;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -154,56 +386,8 @@ body .contact-me .form-home form textarea {
   cursor: pointer;
 }
 @media screen and (max-width: 540px) {
-  body .contact-me .form-home form textarea {
-    width: 280px;
-    margin-top: 20px;
-    margin: auto 20px;
+  body .contact-me form .wrapper_2 textarea {
+    width: 100%;
+    margin: auto;
   }
-}
-body .contact-me .form-home form #mybtns {
-  padding: 10px;
-  border-radius: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  text-align: center;
-  border: none;
-  outline: none;
-  width: auto;
-  float: right;
-  font-size: 20px;
-  background-color: aqua;
-  font-weight: 900;
-}
-@media screen {
-  body .contact-me .form-home form #mybtns {
-    margin: auto 20px;
-  }
-}
-body .contact-me .form-home form #mybtns:hover {
-  cursor: pointer;
-  background-color: gold;
-  color: red;
-}
-body .contact-me .form-home form #myreset {
-  padding: 10px;
-  border-radius: 10px;
-  padding-right: 12px;
-  padding-left: 12px;
-  border: none;
-  outline: none;
-  text-align: center;
-  width: auto;
-  font-size: 20px;
-  background-color: gray;
-  font-weight: 900;
-}
-@media screen {
-  body .contact-me .form-home form #myreset {
-    margin: auto 20px;
-  }
-}
-body .contact-me .form-home form #myreset:hover {
-  cursor: pointer;
-  background-color: salmon;
-  color: white;
 }/*# sourceMappingURL=cont.css.map */

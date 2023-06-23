@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="cont.css">
     <title>CONTACT ME</title>
 </head>
@@ -37,121 +37,69 @@
         <!-- a link to home page -->
             <a href="index.html" class="link">BACK HOME?</a>
         </div>
-        <div class="fill_in" style="text-align: center;">
-            <p id="register" style="color: aqua; font-size: 20px; cursor: pointer; text-decoration: underline;">Click to send me a message</p>
+        <div class="fill_in">
+            <p id="register">Click to send me a message</p>
         </div>
-    <div class="form-home mt-4" style="display: none;">
-        <form action="https://formsubmit.co/raymond.ogaraga@gmail.com" class="bg-primary mt-1 p-3" id="empty" method="post">
-            <div>
+  
+        <form onsubmit="myForms()" id="forms" action="https://formsubmit.co/raymond.ogaraga@gmail.com" method="post">
+            <div class="wrapper_1">
                 <label id="mylabel1" class="form-label">Full Name</label><br>
                 <input type="text" name="FullName" id="texbox1" autocomplete="on" class="form-control" placeholder="Enter your names here" required><br> <br>
                 <label id="mylabel" class="form-label">Email</label><br>
                 <input type="email" name="Email" id="email" autocomplete="on" class="form-control" placeholder="example@good.com" required><br><br>
                 <label id="mylabeltel" class="form-label">Tel</label><br>
                 <input type="tel" name="Phone" id="phone" autocomplete="on" class="form-control" placeholder="Enter your telephone" required><br><br>
+                <div id="btns_1">
+                    <button type="reset" id="myreset">Reset</button>
+                    <button type="button" id="next">Next</button>
+                </div>
+<!-- Conditional statement-label if a condition turns false -->
+                    <label id="mylabel7"></label> <br>
             </div>
-            <div>
+              
+            <div class="wrapper_2">
                 <input type="hidden" name="_next" value="https://port-ogaraga.vercel.app/cont.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_blacklist" value="{fuck,spams, shit,idiot, pussy, nonesense, useless}, fuck you!">
-                <label id="mylabel2" class="form-check">Gender</label><br>
-                <input type="radio" name="Male" id="radiobox1" class="form-check-input">
-                <label id="mylabel3" class="form-check">Male</label>
-                <input type="radio" name="Female" id="radiobox2" class="form-check-input">
-                <label id="mylabel4" class="form-check">Female</label><br>
-            </div>
-            <label id="mylabel5" class="form-label">Your age</label> <br>
-            <input type="number" name="SenderAge" id="myage" class="form-control" placeholder="(Optional)"> <br> <br>
-            <label id="mylabel6" class="form-label">location</label> <br> 
-            <select id="selectme" name="Country/Continent" class="form-control" required>
-                <option selected disabled value= "location">Select your location</option>
-                <option value="Nigeria">Nigeria</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="GHANA">GHANA</option>
-                <option value="GERMANY">GERMANY</option>
-                <option value="SOUTH-AMERICA">SOUTH-AMERICA</option>
-                <option value="EUROPE">EUROPE</option>
-                <option value="AFRICA">AFRICA</option>
-                <option value="ASIA">ASIA</option>
-            </select><br><br>
-            <textarea name="Message" id="message" class="form-control" minlength="15" maxlength="200" cols="30" rows="5" placeholder="Enter your message here" required></textarea> <br>
-            <button type="reset" id="myreset">Reset</button>
-            <button type="submit" id="mybtns" onclick="mySubmit()">Submit</button> <br>
-           
+                <div id="radio-radio">
+                    <label id="mylabel2" class="form-check">Gender</label><br>
+                    <input type="radio" name="Male" id="radiobox1" class="form-check-input">
+                    <label id="mylabel3" class="form-check">Male</label>
+                    <input type="radio" name="Female" id="radiobox2" class="form-check-input">
+                    <label id="mylabel4" class="form-check">Female</label><br>
+                </div>
+                <label id="mylabel5" class="form-label">Your age</label> <br>
+                <input type="number" name="SenderAge" id="myage" class="form-control" placeholder="(Optional)"> <br> <br>
+                <label id="mylabel6" class="form-label">location</label> <br> 
+                <select id="selectme" name="Country/Continent" class="form-control" required>
+                    <option selected disabled value= "location">Select your location</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="GHANA">GHANA</option>
+                    <option value="GERMANY">GERMANY</option>
+                    <option value="SOUTH-AMERICA">SOUTH-AMERICA</option>
+                    <option value="EUROPE">EUROPE</option>
+                    <option value="AFRICA">AFRICA</option>
+                    <option value="ASIA">ASIA</option>
+                </select><br><br>
+                <textarea name="Message" id="message" class="form-control" minlength="15" maxlength="200" cols="30" rows="5" placeholder="Enter your message here" required></textarea> <br>
+                <div class="btns_2">
+                    <button type="button" id="prev">Back</button>
+                    <button type="submit" id="mybtns">Submit</button> <br>
+                </div>
             <!-- Conditional statement-label if a condition turns false -->
-            <label id="mylabel7"></label> <br> 
+            <label id="mylabel8"></label> <br> 
+            </div>
+           
         </form>
-    </div>
 </section>
 
             <!-- Bootstrap CDN js bundle here -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-    
-    <script>
-        $(document).ready( function(){
-         $("#register").click(function() {
-            $(".form-home").toggle();
-         });   
-        });
-            var fullName, male, female, age, feedMe,
-                myForm, email, Submit, telephone;
-                fullName = document.getElementById("texbox1");
-                email = document.getElementById("email");
-                telephone = document.getElementById("phone");
-                male = document.getElementById("radiobox1");
-                female = document.getElementById("radiobox2");
-                age = document.getElementById("myage");
-                feedMe = document.getElementById("mytextmgs");
-                myForm = document.getElementById("contactme");
-                const message = document.getElementById("message");
-                Submit = document.getElementById("mybtns");
-            
-
-        function mySubmit(){   
-                if(fullName.value != ""  && email.value != "" && telephone.value != "" &&
-                message.value != "" && (male.checked || female.checked)) {
-                feedMe.style.display = "block";
-                myForm.style.display = "none";
-                
-            }
-            
-                else{
-                    feedMe.style.display = "none";
-                    myForm.style.display = "block";
-                    document.getElementById("mylabel7").innerHTML =   "** pls reconfirm your entries before submission **";
-                    document.getElementById("mylabel7").style.color = "red";
-                    
-                }
-                    
-            };
-        
-        
-        // function EmailSent() {
-        //     Email.send({
-        //         Securedtoken: "79deb844-1ad9-415e-88e0-173cdccfa539",
-        //         To : "raymond.ogaraga@gmail.com",
-        //         From : document.getElementById("email").value,
-        //         Subject : " Visitor's contact Message",
-        //         Body : "Name:" + document.getElementById("texbox1").value
-        //             + "<br> email:" + document.getElementById("email").value
-        //             + "<br> Phone:" + document.getElementById("phone").value
-        //             + "<br> Gender:" + document.getElementById("radiobox1").value
-        //             + "<br> Gender:" + document.getElementById("radiobox2").value
-        //             + "<br> Message:"+ document.getElementById("message").value
-        //             + "<br> Country/Continent:" + document.getElementById("selectme").value
-                 
-            
-        //         }).then(
-                
-        //            message => alert("Form successfully sent as shown by the feedback message on the page!")                           
-            
-        // )};
-        
-    </script>
-    
+    <script src="cont.js" type="text/javascript"></script>
 </body>
 </html>
