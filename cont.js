@@ -17,12 +17,10 @@
          var form_1 = document.querySelector(".wrapper_1");
          var form_2 = document.querySelector(".wrapper_2");
         nextBtn.addEventListener("click", ()=>{
-        if(fullName.value != ""  && email.value != "" && telephone.value != ""){
+        if(fullName.value != ""   && email.value != "" && telephone.value != ""){
             form_2.style.display = "block";
             form_1.style.display = "none";
             myLabel.innerHTML = "";
-            !male.checked;
-            !female.checked;
             
         }
         else{
@@ -37,8 +35,7 @@
                 form_1.style.display = "block";
                 form_2.style.display = "none";
                 myLab.innerHTML = "";
-                !male.checked;
-                !female.checked;
+                
             }
             else{
                 form_2.style.display = "block";
