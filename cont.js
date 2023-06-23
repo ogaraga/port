@@ -3,6 +3,9 @@
          
          register.addEventListener("click",(e)=>{
             wrapper.classList.toggle('active');
+            fullName.value = "";
+            email.value = "";
+            telephone.value = "";
 
          })
          var male = document.getElementById("radiobox1");
@@ -18,6 +21,8 @@
             form_2.style.display = "block";
             form_1.style.display = "none";
             myLabel.innerHTML = "";
+            male.checked = !male.checked;
+            female.checked = !female.checked;
             
         }
         else{
