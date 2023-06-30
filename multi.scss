@@ -7,7 +7,7 @@
 body{
     background: linear-gradient(to right, whitesmoke, grey, rebeccapurple,gray, white);
     max-width: 100%;
-    max-height: 300vh;
+    min-height: 100vh;
     @media screen and (max-width:600px) {
         width: auto;
         height: auto;
