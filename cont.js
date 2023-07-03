@@ -59,9 +59,6 @@
                 const message = document.getElementById("message");
                 const myFors = document.getElementById("forms");
                 Submit = document.getElementById("mybtns");
-                
-           function myForms() {
-            myFors.style.display = "none";
            
 
         Submit.addEventListener("submit",(e)=>{  
@@ -81,7 +78,7 @@
                 }
                     
             });
-           }
+    
         
         // function EmailSent() {
         //     Email.send({
