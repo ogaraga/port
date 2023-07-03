@@ -59,11 +59,12 @@
                 const message = document.getElementById("message");
                 const myFors = document.getElementById("forms");
                 Submit = document.getElementById("mybtns");
+                
            function myForms() {
             myFors.style.display = "none";
-           } 
+           
 
-        Submit.addEventListener("click",(e)=>{  
+        Submit.addEventListener("submit",(e)=>{  
             e.preventDefault(); 
                 if(message.value != "" && (male.checked && !female.checked  || female.checked && !male.checked)) {
                 feedMe.style.display = "block";
@@ -80,7 +81,7 @@
                 }
                     
             });
-        
+           }
         
         // function EmailSent() {
         //     Email.send({
